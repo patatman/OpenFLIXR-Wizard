@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>OpenFLIXR START</title>
+    <title>OpenFLIXR Setup</title>
 
 	<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,41 +34,42 @@
     <!--   Big container   -->
     <div class="container">
         <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-10 col-sm-offset-1">
 
 
  <!--      Wizard container        -->
             <div class="wizard-container">
-                <div class="card wizard-card ct-wizard-green" id="wizard">
+                <div class="card wizard-card ct-wizard-azzure" id="wizard">
                 <form action="settings.php" method="POST">
                 <!--        You can switch "ct-wizard-azzure"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"             -->
 
                         <div class="wizard-header">
                             <h3>
-                               <b>Setup</b> OpenFLIXR <br>
-                               <small>This information will let us know how to configure OpenFLIXR.</small>
+                               <b>Setup</b><br>
+                               <small>Follow the white rabbit</small>
                             </h3>
                         </div>
                         <ul>
 
+                            <li><a href="#setup" data-toggle="tab">Info</a></li>
+                            <li><a href="#login" data-toggle="tab">Password</a></li>
                             <li><a href="#network" data-toggle="tab">Network</a></li>
-                            <li><a href="#ssl" data-toggle="tab">SSL</a></li>
+                            <li><a href="#ssl" data-toggle="tab">Letsencrypt</a></li>
                             <li><a href="#usenet" data-toggle="tab">Usenet</a></li>
                             <li><a href="#newznab" data-toggle="tab">Newznab</a></li>
-                            <li><a href="#login" data-toggle="tab">Login</a></li>
-                            <li><a href="#extra" data-toggle="tab">Extra</a></li>
-                            <li><a href="#finish" data-toggle="tab">Finishing</a></li>
+                            <li><a href="#extra" data-toggle="tab">Misc</a></li>
+                            <li><a href="#finish" data-toggle="tab">Review</a></li>
                         </ul>
 
                         <div class="tab-content">
 
                             <div class="tab-pane" id="setup" name="messagebox">
-                                <h4 class="info-text"><b>Thank you for downloading OpenFLIXR.</b></h4>
+                                <h4 class="info-text"><b>Welcome to OpenFLIXR setup</b></h4>
                                 <div class="row">
                                     <div class="col-sm-10 col-sm-offset-1">
                                           <h4 class="info-text">
-                                            In the following steps we're going to configure OpenFLIXR. <br /> <br />
-                                             If you're ready to go, you can click "Next"<br />
+                                            To make it easier to get started, applications are preconfigured with OpenFLIXR defaults. There are just a few steps to go through to get your own OpenFLIXR up and running!<br /> <br />
+                                            <br /> Click next to continue<br />
                                              <br />
                                             </h4>
 					</div>
@@ -77,7 +78,7 @@
                             <div class="tab-pane" id="network">
                               <div class="row">
                                   <div class="col-sm-12">
-                                    <h4 class="info-text"> Let's start with the network details</h4>
+                                    <h4 class="info-text"> Choose network configuration</h4>
                                   </div>
 
 
@@ -85,7 +86,7 @@
                                       <div class="col-sm-10 col-sm-offset-1">
                                           <div class="col-sm-4 col-sm-offset-2">
 
-                                              <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want to recieve a IP via DHCP.">
+                                              <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want to use DHCP.">
                                                   <input type="checkbox" name="dhcp" value="dhcp">
                                                   <div class="icon">
                                                       <i class="fa fa-magic"></i>
@@ -94,7 +95,7 @@
                                               </div>
                                           </div>
                                           <div class="col-sm-4">
-                                              <div class="choice" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" rel="tooltip" title="Select this option if you want to give a static ip">
+                                              <div class="choice" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" rel="tooltip" title="Select this option if you want to use a static IP">
                                                   <input type="checkbox" name="static" value="static">
                                                   <div class="icon">
                                                       <i class="fa fa-wrench"></i>
@@ -136,14 +137,14 @@
                         <div class="tab-pane" id="ssl">
                           <div class="row">
                               <div class="col-sm-12">
-                                <h4 class="info-text">Remote availability or mongools only</h4>
+                                <h4 class="info-text">Use Let's Encrypt?</h4>
                               </div>
 
 
                               <div class="row">
                                   <div class="col-sm-10 col-sm-offset-1">
                                       <div class="col-sm-4 col-sm-offset-2">
-                                        <div class="choice" data-toggle="wizard-radio"  rel="tooltip" title="Select this option if you want OpenFLIXR to be available only for your Local Lan.">
+                                        <div class="choice" data-toggle="wizard-radio"  rel="tooltip" title="Select this option if you want OpenFLIXR to be available only on Local LAN">
                                             <input type="checkbox" name="local" value="static">
                                             <div class="icon">
                                                 <i class="fa fa-wheelchair"></i>
@@ -153,12 +154,12 @@
                                       </div>
 
                                       <div class="col-sm-4">
-                                        <div class="choice" data-toggle="collapse" data-target="#remote" aria-expanded="false" aria-controls="remote"rel="tooltip" title="Select this option if you want OpenFLIXR to be reached from the outside.">
+                                        <div class="choice" data-toggle="collapse" data-target="#remote" aria-expanded="false" aria-controls="remote"rel="tooltip" title="Select this option if you want OpenFLIXR to be available from the Internet">
                                             <input type="checkbox" name="remote" value="dhcp">
                                             <div class="icon">
                                                 <i class="fa fa-wheelchair-alt"></i>
                                             </div>
-                                            <h6>Remote and Local</h6>
+                                            <h6>Access remotely</h6>
                                         </div>
                                         </div>
 
@@ -182,12 +183,12 @@
                             <div class="tab-pane" id="usenet">
                               <div class="row">
                                   <div class="col-sm-12">
-                                    <h4 class="info-text">Some usenet details for your convience</h4>
+                                    <h4 class="info-text">Usenet provider</h4>
                                   </div>
 
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
-                                            <label>Description:</label><br>
+                                            <label>Description</label><br>
                                              <input name="usenetdescription" type="text" class="form-control" id="usenetdescription" placeholder="E.g. supernews Usenet">
                                           </div>
                                   </div>
@@ -204,7 +205,7 @@
                                              <div class="col-sm-5 col-sm-offset-1">
                                                  <div class="form-group">
                                                      <div class="form-group">
-                                                       <label>Username:</label><br>
+                                                       <label>Username</label><br>
                                                         <input name="usenetusername" type="text" class="form-control" id="usenetusername" placeholder="OpenFLIXR">
                                           </div>
                                       </div>
@@ -212,7 +213,7 @@
                                   <div class="col-sm-5">
                                       <div class="form-group">
                                           <div class="form-group">
-                                            <label>Password:</label><br>
+                                            <label>Password</label><br>
                                              <input name="usenetpassword" type="text" class="form-control" id="usenetpassword" placeholder="******">
                                </div>
                            </div>
@@ -244,24 +245,24 @@
                             <div class="tab-pane" id="newznab">
                               <div class="row">
                                   <div class="col-sm-12">
-                                    <h4 class="info-text">Your newznab details.</h4>
+                                    <h4 class="info-text">Newznab provider</h4>
                                   </div>
 
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
-                                            <label>Provider name:</label><br>
+                                            <label>Newznab Name</label><br>
                                              <input name="newznabprovider" type="text" class="form-control" id="newznabprovider" placeholder="E.g. nzbplanet">
                                           </div>
                                   </div>
                                   <div class="col-sm-5">
                                           <div class="form-group">
-                                            <label>Provider URL:</label><br>
+                                            <label>Newznab URL</label><br>
                                              <input name="newznaburl" type="text" class="form-control" id="newznaburl" placeholder="E.g. https://nzbplanet.net/">
                                           </div>
                                       </div>
                                       <div class="col-sm-5 col-sm-offset-1">
                                           <div class="form-group">
-                                                <label>Provider API:</label><br>
+                                                <label>Newznab API</label><br>
                                                  <input name="newznabapi" type="text" class="form-control" id="newznabapi" placeholder="E.g. yey4h4Dg323gdgjf">
                                               </div>
                                       </div>
@@ -271,13 +272,13 @@
                             <div class="tab-pane" id="login">
                               <div class="row">
                                   <div class="col-sm-12">
-                                    <h4 class="info-text">And the logon details.</h4>
+                                    <h4 class="info-text">Change password</h4>
                                   </div>
 
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
                                           <div class="form-group">
-                                            <label>Password:</label><br>
+                                            <label>New password</label><br>
                                              <input name="[password]" type="text" class="form-control" id="password" placeholder="********">
                                           </div>
                                       </div>
@@ -289,31 +290,31 @@
                             <div class="tab-pane" id="extra">
                               <div class="row">
                                   <div class="col-sm-12">
-                                    <h4 class="info-text">Extra cool extras.</h4>
+                                    <h4 class="info-text">Additional settings</h4>
                                   </div>
 
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
-                                            <label>Headphones VIP account:</label><br>
+                                            <label><a href="https://headphones.codeshy.com/vip/" target="_blank">Headphones VIP account</label></a><br>
                                              <input name="headphones" type="text" class="form-control" id="headphones" placeholder="E.g. dikketieten_10">
                                           </div>
                                   </div>
                                   <div class="col-sm-5">
                                           <div class="form-group">
-                                            <label>AniDB account:</label><br>
+                                            <label><a href="http://anidb.net" target="_blank">AniDB account</label></a><br>
                                              <input name="anidb" type="text" class="form-control" id="anidb" placeholder="E.g. Geile_anime_10">
                                           </div>
                                       </div>
                                       <div class="col-sm-5 col-sm-offset-1">
                                           <div class="form-group">
-                                                <label>IMDB account:</label><br>
+                                                <label><a href="http://www.imdb.com" target="_blank">IMDB Public URL</label></a><br>
                                                  <input name="imdb" type="text" class="form-control" id="imdb" placeholder="E.g. Squirter_movies_01">
                                               </div>
                                       </div>
                                       <div class="col-sm-5">
                                           <div class="form-group">
-                                                <label>Plex Account:</label><br>
-                                                 <input name="plex" type="text" class="form-control" id="plex" placeholder="E.g. Mooiboyfappert_38">
+                                                <label><a href="http://comicvine.gamespot.com" target="_blank">Comic Vine</label></a><br>
+                                                 <input name="comicvine" type="text" class="form-control" id="plex" placeholder="E.g. Mooiboyfappert_38">
                                               </div>
                                       </div>
 
@@ -324,7 +325,7 @@
                             <div class="tab-pane" id="finish">
                                 <div class="row">
                                     <h4 class="info-text"> Are you sure all settings are correct?</h4>
-                                    <h6 class="info-text"> On the next page we will review the settings and finalize them</h6>
+                                    <h6 class="info-text"> Click finish to review settings and setup OpenFLIXR</h6>
 
                                 </div>
                             </div>
@@ -359,4 +360,3 @@
 
 
 </html>
-
