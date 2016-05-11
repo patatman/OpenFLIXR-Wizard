@@ -45,7 +45,7 @@ ip = $ip
 subnet = $subnet
 gateway = $gateway
 
-[remote access]
+[access]
 local = $local
 remote = $remote
 domain_name = $domainname
@@ -61,17 +61,15 @@ newznab_provider = $newznabprovider
 newznab_url = $newznaburl
 newznab_api = $newznabapi
 
-[global password]
+[password]
 password = $password
 
-[extra settings]
+[misc]
 headphones = $headphones
 anidb = $anidb
 imdb = $imdb
 plex = $plex
-
-[The DEV of OpenFLIXR]
-Dev_OpenFLIXR = Super_mega_power_force_four_next_level_gay");
+");
 fclose($file);
 ?>
 
@@ -87,7 +85,7 @@ fclose($file);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Monitorserver FINISH</title>
+    <title>OpenFLIXR setup finish</title>
 
 	<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -117,7 +115,7 @@ fclose($file);
      <div class="tab-content">
 
      	 <div class="wizard-container">
-                <div class="card wizard-card ct-wizard-green" id="wizard">
+                <div class="card wizard-card ct-wizard-azzure" id="wizard">
                 <!--        You can switch "ct-wizard-azzure"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"       -->
 
                             <div class="tab-pane" id="setup" name="messagebox">

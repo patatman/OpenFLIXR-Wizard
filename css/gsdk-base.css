@@ -313,7 +313,7 @@ h1 .subtitle{
     border: 1px solid #E3E3E3;
     border-radius: 4px;
     box-shadow: none;
-    color: #444444;
+    color: #808080;
     height: 38px;
     padding: 6px 16px;
 }
@@ -708,6 +708,7 @@ label small{
 
 label{
     font-weight: 400;
+    color: #808080;
 }
 
 .image-container{
