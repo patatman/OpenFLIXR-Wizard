@@ -45,7 +45,7 @@ ip = $ip
 subnet = $subnet
 gateway = $gateway
 
-[remote access]
+[access]
 local = $local
 remote = $remote
 domain_name = $domainname
@@ -61,17 +61,15 @@ newznab_provider = $newznabprovider
 newznab_url = $newznaburl
 newznab_api = $newznabapi
 
-[global password]
+[password]
 password = $password
 
-[extra settings]
+[misc]
 headphones = $headphones
 anidb = $anidb
 imdb = $imdb
 plex = $plex
-
-[The DEV of OpenFLIXR]
-Dev_OpenFLIXR = Super_mega_power_force_four_next_level_gay");
+");
 fclose($file);
 ?>
 
@@ -87,7 +85,7 @@ fclose($file);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Monitorserver FINISH</title>
+    <title>OpenFLIXR setup finish</title>
 
 	<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -117,67 +115,67 @@ fclose($file);
      <div class="tab-content">
 
      	 <div class="wizard-container">
-                <div class="card wizard-card ct-wizard-green" id="wizard">
+                <div class="card wizard-card ct-wizard-azzure" id="wizard">
                 <!--        You can switch "ct-wizard-azzure"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"       -->
 
                             <div class="tab-pane" id="setup" name="messagebox">
-                                <h4 class="info-text">Please verify the settings below: </h4>
+                                <h4 class="info-text">Verify settings</h4>
                                 <div class="row">
                                     <div class="col-sm-10 col-sm-offset-1">
                                         <div class="col-sm-5 col-sm-offset-1">
-                                        	<h4>Network settings</h4>
-                                      <h6>DHCP:</h6><p><?php echo "$dhcp"; ?></p>
-                                      <h6>Static:</h6><p><?php echo "$static"; ?></p>
-                                			<h6>IPv4 adress:</h6><p><?php echo "$ip"; ?></p>
-                                			<h6>Subnet:</h6><p><?php echo "$subnet"; ?></p>
-                                			<h6>Gateway:</h6><p><?php echo "$gateway"; ?></p>
+                                        	<h6>Network</h6>
+                                      <h8>DHCP</h8><p><?php echo "$dhcp"; ?></p>
+                                      <h8>Static</h8><p><?php echo "$static"; ?></p>
+                                			<h8>IP adress</h8><p><?php echo "$ip"; ?></p>
+                                			<h8>Subnet</h8><p><?php echo "$subnet"; ?></p>
+                                			<h8>Gateway</h8><p><?php echo "$gateway"; ?></p>
                                         </div>
 
                                         <div class="col-sm-5 col-sm-offset-1">
-											                      <h4>Acces settings</h4>
-                                            <h6>Local:</h6><p><?php echo "$local"; ?></p>
-                                            <h6>Remote:</h6><p><?php echo "$remote"; ?></p>
-                                            <h6>Domainname:</h6><p><?php echo "$domainname"; ?></p>
+											                      <h6>Let's Encypt</h6>
+                                            <h8>Local</h8><p><?php echo "$local"; ?></p>
+                                            <h8>Remote</h8><p><?php echo "$remote"; ?></p>
+                                            <h8>Domain name</h8><p><?php echo "$domainname"; ?></p>
                                         </div>
                                       </div>
                                         <div class="col-sm-10 col-sm-offset-1">
                                         <div class="col-sm-5 col-sm-offset-1">
-                                            <h4>Usenet settings</h4>
-                                            <h6>Usenet description:</h6><p><?php echo "$usenetdescription"; ?></p>
-                                            <h6>Usenet servername:</h6><p><?php echo "$usenetservername"; ?></p>
-                                            <h6>Usenet username:</h6><p><?php echo "$usenetusername"; ?></p>
-                                            <h6>Usenet password:</h6><p><?php echo "$usenetpassword"; ?></p>
+                                            <h6>Usenet</h6>
+                                            <h8>Description</h8><p><?php echo "$usenetdescription"; ?></p>
+                                            <h8>Servername</h8><p><?php echo "$usenetservername"; ?></p>
+                                            <h8>Username</h8><p><?php echo "$usenetusername"; ?></p>
+                                            <h8>Password</h8><p><?php echo "$usenetpassword"; ?></p>
 
 
-                                        <h6>WORK IN PROGRESS:</h6>
+                                        <h8>WORK IN PROGRESS</h8>
                                       </div>
                                       <div class="col-sm-5 col-sm-offset-1">
-                                        <h4>Newznab</h4>
-                                        <h6>Newznab provider:</h6><p><?php echo "$newznabprovider"; ?></p>
-                                        <h6>Newznab URL:</h6><p><?php echo "$newznaburl"; ?></p>
-                                        <h6>Newznab API:</h6><p><?php echo "$newznabapi"; ?></p>
+                                        <h6>Newznab</h6>
+                                        <h8>Provider</h8><p><?php echo "$newznabprovider"; ?></p>
+                                        <h8>URL</h8><p><?php echo "$newznaburl"; ?></p>
+                                        <h8>API</h8><p><?php echo "$newznabapi"; ?></p>
                                       </div>
                                     </div>
                                     <div class="col-sm-10 col-sm-offset-1">
                                         <div class="col-sm-5 col-sm-offset-1">
-											                      <h4>Username settings</h4>
-                                			<h6>Password:</h6><p><?php echo "$password"; ?></p>
+											                      <h6>Global password</h6>
+                                			<h8>Password</h8><p><?php echo "$password"; ?></p>
                                         </div>
                                       </div>
                                       <div class="col-sm-10 col-sm-offset-1">
                                         <div class="col-sm-5 col-sm-offset-1">
-                                        <h4>Extra settings</h4>
-                                        <h6>Headphones:</h6><p><?php echo "$headphones"; ?></p>
-                                        <h6>AniDB:</h6><p><?php echo "$anidb"; ?></p>
-                                        <h6>Plex:</h6><p><?php echo "$plex"; ?></p>
-                                        <h6>IMDB:</h6><p><?php echo "$imdb"; ?></p>
+                                        <h6>Miscellaneous</h6>
+                                        <h8>Headphones</h8><p><?php echo "$headphones"; ?></p>
+                                        <h8>AniDB</h8><p><?php echo "$anidb"; ?></p>
+                                        <h8>Plex</h8><p><?php echo "$plex"; ?></p>
+                                        <h8>Comic Vine</h8><p><?php echo "$imdb"; ?></p>
                                     </div>
                                   </div>
                                   </div>
                                 </div>
                             </div>
                                 <div class="pull-right">
-                                     <button type="button" class="btn btn-default">Finish</button>
+                                     <button type="button" class="btn btn-default">Go!</button>
                                     <?php
                                 #    $stringData = "Network Settings:\n";
                                 #    fwrite($fh, $stringData);
@@ -187,7 +185,7 @@ fclose($file);
                                 ?>
                                 </div>
                                 <div class="pull-left">
-                                     <button type="button" class="btn btn-default">Change settings</button>
+                                     <button type="button" class="btn btn-default">Go back</button>
                                 </div>
                                 <div class="clearfix"></div>
 
@@ -195,4 +193,3 @@ fclose($file);
                         </div>
                         </html>
                     </body>
-
