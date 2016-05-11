@@ -50,7 +50,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
 /*           Typography          */
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{
-    font-weight: 400;
+    font-weight: 300;
     margin: 30px 0 15px;
 }
 
@@ -72,7 +72,7 @@ h5, .h5 {
 }
 h6, .h6{
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
 }
 p{
@@ -283,7 +283,7 @@ h1 .subtitle{
 /*          End Buttons fill          */
 
 .btn-simple{
-    font-weight: 600;
+    font-weight: 500;
     border: 0;
     padding: 10px 18px;
 }
@@ -313,7 +313,7 @@ h1 .subtitle{
     border: 1px solid #E3E3E3;
     border-radius: 4px;
     box-shadow: none;
-    color: #444444;
+    color: #808080;
     height: 38px;
     padding: 6px 16px;
 }
@@ -555,7 +555,7 @@ label small{
 
 .tooltip {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
 }
 .tooltip-arrow{
     display: none;
@@ -708,6 +708,7 @@ label small{
 
 label{
     font-weight: 400;
+    color: #808080;
 }
 
 .image-container{
@@ -840,7 +841,7 @@ label{
 }
 .wizard-card .info-text{
     text-align: center;
-    font-weight: 300;
+    font-weight: 200;
     margin: 10px 0 30px;
 }
 .wizard-card .choice{

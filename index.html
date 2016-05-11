@@ -46,7 +46,11 @@
                         <div class="wizard-header">
                             <h3>
                                <b>Setup</b><br>
+<<<<<<< HEAD
                                <small>Follow the white rabbit</small>
+=======
+                               <br>
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                             </h3>
                         </div>
                         <ul>
@@ -58,12 +62,17 @@
                             <li><a href="#usenet" data-toggle="tab">Usenet</a></li>
                             <li><a href="#newznab" data-toggle="tab">Newznab</a></li>
                             <li><a href="#extra" data-toggle="tab">Misc</a></li>
+<<<<<<< HEAD
                             <li><a href="#finish" data-toggle="tab">Review</a></li>
+=======
+                            <li><a href="#finish" data-toggle="tab">Plex</a></li>
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                         </ul>
 
                         <div class="tab-content">
 
                             <div class="tab-pane" id="setup" name="messagebox">
+<<<<<<< HEAD
                                 <h4 class="info-text"><b>Welcome to OpenFLIXR setup</b></h4>
                                 <div class="row">
                                     <div class="col-sm-10 col-sm-offset-1">
@@ -72,6 +81,56 @@
                                             <br /> Click next to continue<br />
                                              <br />
                                             </h4>
+=======
+                                <h4 class="info-text">Let's go!</h4>
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+
+                                      <p><span style="color: #808080;">OpenFLIXR is incredibly feature rich. To make it easier to get started, applications are preconfigured with OpenFLIXR defaults. There are just a few steps&nbsp;to go through to get your own OpenFLIXR up and running!</span></p>
+                                      <p><span style="color: #808080;">This setup&nbsp;should be performed as soon as you’re done reading. It will take care of the following:</span></p><br>
+                                      <p><span style="color: #808080;"><style>
+#fac_57324bf4a73ee {
+color: #808080!important;            }
+#fac_57324bf4a73ee:hover {
+}
+</style>
+<i id="fac_57324bf4a8a02" class="fa fa-check-square-o"></i>
+Ask for a user defined password<br>
+<style>
+#fac_57324bf4a957e {
+color: #808080!important;            }
+#fac_57324bf4a957e:hover {
+}
+</style>
+<i id="fac_57324bf4a73ee" class="fa fa-check-square-o"></i>
+Guide you through the&nbsp;basic stuff&nbsp;like network, Newznab and Usenet settings<br>
+<style>
+#fac_57324bf4a7ed5 {
+color: #808080!important;            }
+#fac_57324bf4a7ed5:hover {
+}
+</style>
+<i id="fac_57324bf4a957e" class="fa fa-check-square-o"></i>
+Setup Let’s Encrypt</span><br>
+<span style="color: #808080;"><style>
+#fac_57324bf4ab391 {
+color: #808080!important;            }
+#fac_57324bf4ab391:hover {
+}
+</style>
+<i id="fac_57324bf4a7ed5" class="fa fa-check-square-o"></i>
+Generate random API&nbsp;keys</span><br>
+<span style="color: #808080;"><style>
+#fac_57324bf4a8a02 {
+color: #808080!important;            }
+#fac_57324bf4a8a02:hover {
+}
+</style>
+<i id="fac_57324bf4ab391" class="fa fa-check-square-o"></i>
+Install Plex Media Server (to comply with TOS)</span></p>
+
+<br>
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
 					</div>
                             </div>
 			</div>
@@ -111,21 +170,29 @@
 
                                   <div class="col-sm-5 col-sm-offset-1">
                                        <div class="form-group">
-                                            <label>IP</label><br>
-                                             <input name="ip" type="text" class="form-control" id="ip" placeholder="E.g. 192.168.0.5">
+                                            <label>IP address</label><br>
+                                             <input name="ip" type="text" class="form-control" id="ip" placeholder="E.g. 10.10.10.10">
                                           </div>
                                   </div>
                                   <div class="col-sm-5">
                                       <div class="form-group">
-                                            <label>Subnet</label><br>
-                                             <input name="subnet" type="text" class="form-control" id="subnet" placeholder="E.g. 255.255.255.0">
+                                            <label>Subnet Mask</label><br>
+                                             <input name="subnet" type="text" class="form-control" id="subnet" placeholder="E.g. 255.255.0.0">
                                           </div>
                                   </div>
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
                                           <div class="form-group">
                                             <label>Gateway</label><br>
-                                             <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 192.168.0.1">
+                                             <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 10.10.10.1">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-5">
+                                      <div class="form-group">
+                                          <div class="form-group">
+                                            <label>DNS</label><br>
+                                             <input name="dnsserver" type="text" class="form-control" id="dnsserver" placeholder="E.g. 8.8.8.8">
                                           </div>
                                       </div>
                                   </div>
@@ -137,19 +204,27 @@
                         <div class="tab-pane" id="ssl">
                           <div class="row">
                               <div class="col-sm-12">
+<<<<<<< HEAD
                                 <h4 class="info-text">Use Let's Encrypt?</h4>
+=======
+                                <h4 class="info-text">How do you want to access OpenFLIXR</h4>
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                               </div>
 
 
                               <div class="row">
                                   <div class="col-sm-10 col-sm-offset-1">
                                       <div class="col-sm-4 col-sm-offset-2">
+<<<<<<< HEAD
                                         <div class="choice" data-toggle="wizard-radio"  rel="tooltip" title="Select this option if you want OpenFLIXR to be available only on Local LAN">
+=======
+                                        <div class="choice" data-toggle="wizard-radio"  rel="tooltip" title="Select this option if you want OpenFLIXR to be available only from your LAN">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                             <input type="checkbox" name="local" value="static">
                                             <div class="icon">
                                                 <i class="fa fa-wheelchair"></i>
                                             </div>
-                                            <h6>Local only</h6>
+                                            <h6>LAN</h6>
                                         </div>
                                       </div>
 
@@ -159,7 +234,11 @@
                                             <div class="icon">
                                                 <i class="fa fa-wheelchair-alt"></i>
                                             </div>
+<<<<<<< HEAD
                                             <h6>Access remotely</h6>
+=======
+                                            <h6>Remote</h6>
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                         </div>
                                         </div>
 
@@ -170,10 +249,49 @@
                                     <div class="collapse" id="remote">
 
 
-                              <div class="col-sm-5 col-sm-offset-4">
+                              <div class="col-sm-7 col-sm-offset-3">
                                    <div class="form-group">
+<br>
+                                     <p><span style="color: #808080;">Secure remote access with </span><a href="https://letsencrypt.org" target="_blank">Let’s Encrypt</a>&nbsp;<span style="color: #808080;">is enabled as soon as you've met all conditions below. Certificates are auto-renewed.<br></p>
+
+                                     <p><span style="color: #808080;"><style>
+                                     #fac_57324bf4abf31 {
+                                     color: #808080!important;            }
+                                     #fac_57324bf4abf31:hover {
+                                     }
+                                     </style>
+                                     <i id="fac_57324bf4abf31" class="fa fa-check-square-o"></i>
+                                     Register domain name</span><br>
+                                     <span style="color: #808080;"><style>
+                                     #fac_57324bf4aca8a {
+                                     color: #808080!important;            }
+                                     #fac_57324bf4aca8a:hover {
+                                     }
+                                     </style>
+                                     <i id="fac_57324bf4aca8a" class="fa fa-check-square-o"></i>
+                                     Edit / add&nbsp;<a href="https://support.google.com/a/answer/2576578" target="_blank">A record(s)</a> and point them to your public IP address</span><br>
+                                     <span style="color: #808080;"><style>
+                                     #fac_57324bf4ad906 {
+                                     color: #808080!important;            }
+                                     #fac_57324bf4ad906:hover {
+                                     }
+                                     </style>
+                                     <i id="fac_57324bf4ad906" class="fa fa-check-square-o"></i>
+                                     Forward port 443 on your router to local IP of OpenFLIXR</span><br>
+                                     <span style="color: #808080;"><style>
+                                     #fac_57324bf4aee2a {
+                                     color: #808080!important;            }
+                                     #fac_57324bf4aee2a:hover {
+                                     }
+                                     </style>
+                                     <i id="fac_57324bf4aee2a" class="fa fa-check-square-o"></i>
+                                     Enter domainname and e-mail address below</span></p>
+
+<p><span style="color: #808080;">Remember to forward port 443 (HTTPS)&nbsp;<strong>only</strong>!</span></p>
                                         <label>Domainname</label><br>
-                                         <input name="domainname" type="text" class="form-control" id="ip" placeholder="E.g. openflixr.openflixr.com">
+                                         <input name="domainname" type="url" class="form-control" id="ip" placeholder="www.example.com">
+                                         <br><label>E-mail address (required for lost key recovery)</label><br>
+                                          <input name="email" type="email" class="form-control" id="email" placeholder="somebody@example.com">
                                       </div>
                               </div>
                         </div>
@@ -189,14 +307,18 @@
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
                                             <label>Description</label><br>
+<<<<<<< HEAD
                                              <input name="usenetdescription" type="text" class="form-control" id="usenetdescription" placeholder="E.g. supernews Usenet">
+=======
+                                             <input name="usenetdescription" type="text" class="form-control" id="usenetdescription" placeholder="Super Usenet">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                           </div>
                                   </div>
                                   <div class="col-sm-5">
                                       <div class="form-group">
                                           <div class="form-group">
                                             <label>Servername</label><br>
-                                             <input name="usenetservername" type="text" class="form-control" id="usenetservername" placeholder="news.supernews.com">
+                                             <input name="usenetservername" type="url" class="form-control" id="usenetservername" placeholder="news.example.com">
                                            </div>
                                          </div>
                                        </div>
@@ -206,7 +328,11 @@
                                                  <div class="form-group">
                                                      <div class="form-group">
                                                        <label>Username</label><br>
+<<<<<<< HEAD
                                                         <input name="usenetusername" type="text" class="form-control" id="usenetusername" placeholder="OpenFLIXR">
+=======
+                                                        <input name="usenetusername" type="text" class="form-control" id="usenetusername" placeholder="openflixr">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                           </div>
                                       </div>
                                   </div>
@@ -214,7 +340,11 @@
                                       <div class="form-group">
                                           <div class="form-group">
                                             <label>Password</label><br>
+<<<<<<< HEAD
                                              <input name="usenetpassword" type="text" class="form-control" id="usenetpassword" placeholder="******">
+=======
+                                             <input name="usenetpassword" type="password" class="form-control" id="usenetpassword" placeholder="password">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                </div>
                            </div>
                        </div>
@@ -222,24 +352,15 @@
                          <div class="form-group">
                              <label>SSL</label>
                              <select class="form-control">
-                               <option disabled="" selected="">No</option>
-                               <option>Yes</option>
-                               <option>No</option>
+                               <option disabled="" selected="No">No</option>
+                               <option>TLS v1</option>
+                               <option>TLS v1.1</option>
+                               <option>TLS v1.2</option>
                              </select>
                          </div>
             </div>
 
-            <div class="col-sm-5">
-              <div class="form-group">
-                  <label>SSL type</label>
-                  <select class="form-control">
-                    <option disabled="" selected="">SSL Type(Default: TLS v1)</option>
-                    <option>TLS v1</option>
-                    <option>TLS v1.1</option>
-                    <option>TLS v1.2</option>
-                  </select>
-                                </div>
-                            </div>
+
                           </div>
                         </div>
                             <div class="tab-pane" id="newznab">
@@ -250,20 +371,33 @@
 
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
+<<<<<<< HEAD
                                             <label>Newznab Name</label><br>
                                              <input name="newznabprovider" type="text" class="form-control" id="newznabprovider" placeholder="E.g. nzbplanet">
+=======
+                                            <label>Description</label><br>
+                                             <input name="newznabprovider" type="text" class="form-control" id="newznabprovider" placeholder="NZB Planet">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                           </div>
                                   </div>
                                   <div class="col-sm-5">
                                           <div class="form-group">
                                             <label>Newznab URL</label><br>
+<<<<<<< HEAD
                                              <input name="newznaburl" type="text" class="form-control" id="newznaburl" placeholder="E.g. https://nzbplanet.net/">
+=======
+                                             <input name="newznaburl" type="url" class="form-control" id="newznaburl" placeholder="http://nzb.example.com">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                           </div>
                                       </div>
                                       <div class="col-sm-5 col-sm-offset-1">
                                           <div class="form-group">
                                                 <label>Newznab API</label><br>
+<<<<<<< HEAD
                                                  <input name="newznabapi" type="text" class="form-control" id="newznabapi" placeholder="E.g. yey4h4Dg323gdgjf">
+=======
+                                                 <input name="newznabapi" type="text" class="form-control" id="newznabapi" placeholder="apikey">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                               </div>
                                       </div>
 
@@ -272,14 +406,27 @@
                             <div class="tab-pane" id="login">
                               <div class="row">
                                   <div class="col-sm-12">
+<<<<<<< HEAD
                                     <h4 class="info-text">Change password</h4>
+=======
+                                    <h4 class="info-text">Global password change</h4>
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                   </div>
 
-                                  <div class="col-sm-5 col-sm-offset-1">
+                                  <div class="col-sm-4 col-sm-offset-4">
                                       <div class="form-group">
                                           <div class="form-group">
+<<<<<<< HEAD
                                             <label>New password</label><br>
                                              <input name="[password]" type="text" class="form-control" id="password" placeholder="********">
+=======
+                                            <label>Password</label><br>
+                                            <input name="password1" type="password" class="form-control" id="password1" placeholder="password">
+                                            <br>
+                                            <br>
+                                            <label>Confirm password</label><br>
+                                            <input name="password2" type="password" class="form-control" id="password2" placeholder="password">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                           </div>
                                       </div>
                                   </div>
@@ -290,31 +437,79 @@
                             <div class="tab-pane" id="extra">
                               <div class="row">
                                   <div class="col-sm-12">
+<<<<<<< HEAD
                                     <h4 class="info-text">Additional settings</h4>
+=======
+                                    <h4 class="info-text">Optional settings</h4>
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                   </div>
 
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
+<<<<<<< HEAD
                                             <label><a href="https://headphones.codeshy.com/vip/" target="_blank">Headphones VIP account</label></a><br>
                                              <input name="headphones" type="text" class="form-control" id="headphones" placeholder="E.g. dikketieten_10">
+=======
+                                            <label><a href="https://headphones.codeshy.com/vip/" target="_blank">Headphones VIP username</label></a><br>
+                                             <input name="headphonesuser" type="text" class="form-control" id="headphonesuser" placeholder="openflixr">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                           </div>
                                   </div>
                                   <div class="col-sm-5">
+                                      <div class="form-group">
+                                            <label>Headphones VIP password</label><br>
+                                             <input name="headphonespass" type="password" class="form-control" id="headphonespass" placeholder="password">
+                                          </div>
+                                  </div>
+                                  <div class="col-sm-5 col-sm-offset-1">
                                           <div class="form-group">
+<<<<<<< HEAD
                                             <label><a href="http://anidb.net" target="_blank">AniDB account</label></a><br>
                                              <input name="anidb" type="text" class="form-control" id="anidb" placeholder="E.g. Geile_anime_10">
+=======
+                                            <label><a href="http://anidb.net" target="_blank">AniDB username</label></a><br>
+                                             <input name="anidbuser" type="text" class="form-control" id="anidbuser" placeholder="openflixr">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                           </div>
                                       </div>
+                                      <div class="col-sm-5">
+                                              <div class="form-group">
+                                                <label>AniDB password</label><br>
+                                                 <input name="anidbpass" type="password" class="form-control" id="anidbpass" placeholder="password">
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-5 col-sm-offset-1">
+                                                  <div class="form-group">
+                                                    <label><a href="http://www.spotify.com" target="_blank">Spotify username</label></a><br>
+                                                     <input name="spotuser" type="text" class="form-control" id="spotuser" placeholder="openflixr">
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-5">
+                                                      <div class="form-group">
+                                                        <label>Spotify password</label><br>
+                                                         <input name="spotpass" type="password" class="form-control" id="spotpass" placeholder="password">
+                                                      </div>
+                                                  </div>
                                       <div class="col-sm-5 col-sm-offset-1">
                                           <div class="form-group">
+<<<<<<< HEAD
                                                 <label><a href="http://www.imdb.com" target="_blank">IMDB Public URL</label></a><br>
                                                  <input name="imdb" type="text" class="form-control" id="imdb" placeholder="E.g. Squirter_movies_01">
+=======
+                                                <label><a href="http://www.imdb.com" target="_blank">IMDB public watchlist URL</label></a><br>
+                                                 <input name="imdb" type="url" class="form-control" id="imdb" placeholder="http://rss.imdb.com/user/ur12345678/watchlist">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                               </div>
                                       </div>
                                       <div class="col-sm-5">
                                           <div class="form-group">
+<<<<<<< HEAD
                                                 <label><a href="http://comicvine.gamespot.com" target="_blank">Comic Vine</label></a><br>
                                                  <input name="comicvine" type="text" class="form-control" id="plex" placeholder="E.g. Mooiboyfappert_38">
+=======
+                                                <label><a href="http://comicvine.gamespot.com" target="_blank">Comic Vine API key</label></a><br>
+                                                 <input name="comicvine" type="text" class="form-control" id="plex" placeholder="apikey">
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
                                               </div>
                                       </div>
 
@@ -322,13 +517,69 @@
                             </div>
 
 
-                            <div class="tab-pane" id="finish">
+
+                            <div class="tab-pane" id="finish" name="messagebox">
+                                <h4 class="info-text">Plex integration</h4>
                                 <div class="row">
+<<<<<<< HEAD
                                     <h4 class="info-text"> Are you sure all settings are correct?</h4>
                                     <h6 class="info-text"> Click finish to review settings and setup OpenFLIXR</h6>
+=======
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                      <p><span style="color: #808080;">Tight integration with <a href="https://plex.tv" target="_blank">Plex</a> makes OpenFLIXR even more powerful. For optimum performance, you should configure the following applications with your Plex account.</span></p><br>
+                                      <p><span style="color: #808080;"><style>
+#fac_57324bf4a73ee {
+color: #808080!important;            }
+#fac_57324bf4a73ee:hover {
+}
+</style>
+<i id="fac_57324bf4a73ee" class="fa fa-check-square-o"></i>
+CouchPotato <a href="/couchpotato/settings/notifications/" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a><br>
+<style>
+#fac_57324bf4a7ed5 {
+color: #808080!important;            }
+#fac_57324bf4a7ed5:hover {
+}
+</style>
+<i id="fac_57324bf4a7ed5" class="fa fa-check-square-o"></i>
+SickRage <a href="/sickrage/config/notifications/" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a></span><br>
+<span style="color: #808080;"><style>
+#fac_57324bf4a8a02 {
+color: #808080!important;            }
+#fac_57324bf4a8a02:hover {
+}
+</style>
+<i id="fac_57324bf4a8a02" class="fa fa-check-square-o"></i>
+PlexPy <a href="/plexpy" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a><br>
+<style>
+#fac_57324bf4a957e {
+color: #808080!important;            }
+#fac_57324bf4a957e:hover {
+}
+</style>
+<i id="fac_57324bf4a957e" class="fa fa-check-square-o"></i>
+PlexRequests.net <a href="/request/admin/authentication" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a></span><br>
+<span style="color: #808080;"><style>
+#fac_57324bf4ab391 {
+color: #808080!important;            }
+#fac_57324bf4ab391:hover {
+}
+</style>
+<i id="fac_57324bf4ab391" class="fa fa-check-square-o"></i>
+HTPC-Manager <a href="/htpc/settings/" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a></span></p>
+>>>>>>> 8ea7d61ff6df6c966992966c77d0fc1b1c9178a4
 
-                                </div>
+                                          <h4 class="info-text">
+                                            <br>
+                                            <br /> Click <b>finish</b> to review settings<br />
+                                             <br />
+                                            </h4>
+					</div>
                             </div>
+			</div>
+
+
+
                         </div>
                         <div class="wizard-footer">
                                 <div class="pull-right">
