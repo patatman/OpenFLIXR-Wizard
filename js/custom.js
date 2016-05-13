@@ -1,0 +1,105 @@
+jQuery.validator.addMethod("checkurl", function(value, element) {
+// now check if valid url
+return /^(www\.)[A-Za-z0-9_-]+\.+[A-Za-z0-9.\/%&=\?_:;-]+$/.test(value);
+}, "Please enter a valid domainname"
+);
+
+// connect it to a css class
+ jQuery.validator.addClassRules({
+checkurl : { checkurl : true }
+});
+
+jQuery.validator.addMethod('validIP', function(value) {
+    var split = value.split('.');
+    if (split.length != 4)
+        return false;
+
+    for (var i=0; i<split.length; i++) {
+        var s = split[i];
+        if (s.length==0 || isNaN(s) || s<0 || s>255)
+            return false;
+    }
+    return true;
+}, ' Invalid IP Address');
+
+$(document).ready(function() {
+
+
+    $('#registration-form').validate({
+        rules: {
+            name: {
+                required: true,
+                required: true
+            },
+
+            username: {
+                minlength: 6,
+                required: true
+            },
+
+            password: {
+                required: true,
+                minlength: 8
+            },
+            confirm_password: {
+                required: true,
+                minlength: 8,
+                equalTo: "#password"
+            },
+
+            domainname: {
+                required: true,
+                checkurl: true
+            },
+            ip: {
+                required: true,
+                validIP: true
+            },
+            subnet: {
+                required: true,
+                validIP: true
+            },
+            gateway: {
+                required: true,
+                validIP: true
+            },
+            dns: {
+                required: true,
+                validIP: true
+            },
+            setup: {
+                required: true
+            },
+            username: {
+                required: true
+            },
+            password: {
+                required: true,
+                minlength: 8
+            },
+
+            email: {
+                required: true,
+                email: true
+            },
+
+            address: {
+                minlength: 10,
+                required: true
+            },
+
+            agree: "required"
+
+        },
+        highlight: function(element) {
+            $(element).closest('.control-group').removeClass('success').addClass('error');
+        },
+        success: function(element) {
+            element
+                .text('OK').addClass('valid')
+                .closest('.control-group').removeClass('error').addClass('success');
+        }
+
+    });
+
+}); // end document.ready

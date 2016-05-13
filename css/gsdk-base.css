@@ -413,10 +413,9 @@ h1 .subtitle{
 }
 
 label.error{
-    color: #FF3B30;
+    color: #ff52bd;
     margin-top: 5px;
     margin-bottom: 0;
-
 }
 
 label small{
@@ -562,10 +561,10 @@ label small{
     opacity: 0;
 }
 .tooltip-inner {
-    background-color: #FAE6A4;
+    background-color: #2CA8FF;
     border-radius: 4px;
     box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
-    color: #734726;
+    color: #ffffff;
     max-width: 200px;
     padding: 6px 10px;
     text-align: center;
@@ -590,7 +589,7 @@ label small{
     padding: 0;
 }
 .tooltip.top .tooltip-inner:after {
-    border-top: 11px solid #FAE6A4;
+    border-top: 11px solid #2CA8FF;
     border-left: 11px solid rgba(0, 0, 0, 0);
     border-right: 11px solid rgba(0, 0, 0, 0);
     bottom: -10px;
@@ -606,7 +605,7 @@ label small{
     padding: 0;
 }
 .tooltip.bottom .tooltip-inner:after {
-    border-bottom: 11px solid #FAE6A4;
+    border-bottom: 11px solid #2CA8FF;
     border-left: 11px solid rgba(0, 0, 0, 0);
     border-right: 11px solid rgba(0, 0, 0, 0);
     top: -10px;
@@ -622,7 +621,7 @@ label small{
     padding: 0;
 }
 .tooltip.left .tooltip-inner:after {
-    border-left: 11px solid #FAE6A4;
+    border-left: 11px solid #2CA8FF;
     border-top: 11px solid rgba(0, 0, 0, 0);
     border-bottom: 11px solid rgba(0, 0, 0, 0);
     right: -10px;
@@ -642,7 +641,7 @@ label small{
     padding: 0;
 }
 .tooltip.right .tooltip-inner:after {
-    border-right: 11px solid #FAE6A4;
+    border-right: 11px solid #2CA8FF;
     border-top: 11px solid rgba(0, 0, 0, 0);
     border-bottom: 11px solid rgba(0, 0, 0, 0);
     left: -10px;
