@@ -413,8 +413,36 @@ h1 .subtitle{
 }
 
 label.error{
-    color: #ff52bd;
-    margin-top: 5px;
+  background-color: #ff52bd;
+  border-radius: 2px;
+  color: #ffffff;
+  max-width: 500px;
+  padding: 1px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  left: 100%;
+  margin-left: -95%;
+  position: absolute;
+    color: #ffffff;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+label.valid{
+  background-color: #32CC90;
+  border-radius: 2px;
+  color: #ffffff;
+  max-width: 500px;
+  padding: 1px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  left: 100%;
+  margin-left: -95%;
+  position: absolute;
+    color: #ffffff;
+    margin-top: 2px;
     margin-bottom: 0;
 }
 
