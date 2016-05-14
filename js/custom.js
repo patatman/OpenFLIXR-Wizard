@@ -1,6 +1,6 @@
 jQuery.validator.addMethod("checkurl", function(value, element) {
 // now check if valid url
-return /^(www\.)[A-Za-z0-9_-]+\.+[A-Za-z0-9.\/%&=\?_:;-]+$/.test(value);
+return /^()[A-Za-z0-9_-]+\.+[A-Za-z0-9.\/%&=\?_:;-]+$/.test(value);
 }, "Please enter a valid domain name"
 );
 

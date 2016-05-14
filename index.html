@@ -192,12 +192,9 @@ color: #808080!important;            }
                                             <div class="col-sm-12">
                                                 <h4 class="info-text"> Choose network configuration</h4>
                                             </div>
-
-
                                             <div class="row">
                                                 <div class="col-sm-10 col-sm-offset-1">
                                                     <div class="col-sm-4 col-sm-offset-2">
-
                                                         <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want to use DHCP.">
                                                             <input type="checkbox" name="dhcp" value="dhcp">
                                                             <div class="icon" onclick="$('#collapseExample').hide();">
@@ -218,44 +215,41 @@ color: #808080!important;            }
                                                 </div>
                                             </div>
                                             <div class="collapse" id="collapseExample">
-
                                                 <div class="col-sm-5 col-sm-offset-1">
-                                                    <div class="form-group">
-                                                        <br>
-                                                        <label>IP address</label>
-                                                        <br>
-                                                        <input name="ip" type="text" class="form-control" id="ip" placeholder="E.g. 10.10.10.10" required>
+                                                    <br>
+                                                    <label>IP Address</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" id="ip" name="ip" placeholder="E.g. 10.10.10.10" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-5">
-                                                    <div class="form-group">
-                                                        <br>
-                                                        <label>Subnet Mask</label>
-                                                        <br>
+                                                    <br>
+                                                    <label>Subnet Mask</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
                                                         <input name="subnet" type="text" class="form-control" id="subnet" placeholder="E.g. 255.255.0.0" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-5 col-sm-offset-1">
-                                                    <div class="form-group">
-                                                        <br>
-                                                        <label>Gateway</label>
-                                                        <br>
+                                                    <br>
+                                                    <label>Gateway</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
                                                         <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 10.10.10.1" required>
                                                     </div>
                                                 </div>
-                                                <br>
                                                 <div class="col-sm-5">
-                                                    <div class="form-group" rel="tooltip" title="Google DNS: 8.8.8.8">
-                                                        <br>
-                                                        <label>DNS Server</label>
-                                                        <br>
+                                                    <br>
+                                                    <label>DNS Server</label>
+                                                    <div class="input-group" rel="tooltip" title="Google DNS: 8.8.8.8">
+                                                        <span class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
                                                         <input name="dns" type="text" class="form-control" id="dns" placeholder="E.g. 8.8.8.8" required>
                                                     </div>
                                                 </div>
-                                                <br>
-
                                             </div>
                                         </div>
+                                        <br>
                                     </div>
 
                                     <div class="tab-pane" id="ssl">
@@ -335,14 +329,21 @@ color: #808080!important;            }
                                      Enter domainname and e-mail address below</span></p>
 
                                                         <p><span style="color: #808080;">Remember to forward port 443 (HTTPS)&nbsp;<strong>only</strong>!</span></p>
-                                                        <label class="control-label" for="domainname">Domain (required to obtain certificate)</label>
+                                                        <div>
+                                                            <label>Domain (required to obtain certificate)</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">www.</i></span>
+                                                                <input name="domainname" type="text" class="form-control" id="domainname" placeholder="example.com" required rel="tooltip" title="Let's Encrypt certificate will contain both base domain and with www.">
+                                                            </div>
+                                                        </div>
                                                         <br>
-                                                        <input name="domainname" type="text" class="form-control" id="domainname" placeholder="example.com" value="www." required rel="tooltip" title="Let's Encrypt certificate will contain both base domain and with www.">
-                                                        <br>
-                                                        <br>
-                                                        <label>E-mail address (required for lost key recovery)</label>
-                                                        <br>
-                                                        <input name="email" type="email" class="form-control" id="email" placeholder="somebody@example.com" required>
+                                                        <div>
+                                                            <label>E-mail address (required for lost key recovery)</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">&nbsp&nbsp<i class="fa fa-envelope-o" aria-hidden="true">&nbsp&nbsp</i></span>
+                                                                <input name="email" type="email" class="form-control" id="email" placeholder="somebody@example.com" required>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -356,43 +357,42 @@ color: #808080!important;            }
                                             </div>
 
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group">
-                                                    <label>Description</label>
-                                                    <br>
+                                                <label>Description</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                                                     <input name="usenetdescription" type="text" class="form-control" id="usenetdescription" placeholder="Super Usenet">
                                                 </div>
                                             </div>
+
                                             <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <div class="form-group">
-                                                        <label>Servername</label>
-                                                        <br>
-                                                        <input name="usenetservername" type="text" class="form-control" id="usenetservername" placeholder="news.example.com">
-                                                    </div>
+                                                <label>Servername</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-server" aria-hidden="true"></i></span>
+                                                    <input name="usenetservername" type="text" class="form-control" id="usenetservername" placeholder="news.example.com">
                                                 </div>
                                             </div>
 
+                                            <div class="col-sm-5 col-sm-offset-1">
+                                                <br>
+                                                <label>Username</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                                    <input name="usenetusername" type="text" class="form-control" id="usenetusername" placeholder="openflixr">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-5">
+                                                <br>
+                                                <label>Password</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                                                    <input name="usenetpassword" type="password" class="form-control" id="usenetpassword" placeholder="password">
+                                                </div>
+                                            </div>
 
                                             <div class="col-sm-5 col-sm-offset-1">
                                                 <div class="form-group">
-                                                    <div class="form-group">
-                                                        <label>Username</label>
-                                                        <br>
-                                                        <input name="usenetusername" type="text" class="form-control" id="usenetusername" placeholder="openflixr">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <div class="form-group">
-                                                        <label>Password</label>
-                                                        <br>
-                                                        <input name="usenetpassword" type="password" class="form-control" id="usenetpassword" placeholder="password">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group">
+                                                    <br>
                                                     <label>SSL</label>
                                                     <select class="form-control">
                                                         <option disabled="" selected="No">No</option>
@@ -413,26 +413,30 @@ color: #808080!important;            }
                                             </div>
 
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group">
-                                                    <label>Description</label>
-                                                    <br>
+                                                <label>Description</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                                                     <input name="newznabprovider" type="text" class="form-control" id="newznabprovider" placeholder="NZB Planet">
                                                 </div>
                                             </div>
+
                                             <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label>Newznab URL</label>
-                                                    <br>
+                                                <label>Newznab URL</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-link" aria-hidden="true"></i></span>
                                                     <input name="newznaburl" type="url" class="form-control" id="newznaburl" placeholder="http://nzb.example.com">
                                                 </div>
                                             </div>
+
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group">
-                                                    <label>Newznab API</label>
-                                                    <br>
+                                                <br>
+                                                <label>Newznab API</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
                                                     <input name="newznabapi" type="text" class="form-control" id="newznabapi" placeholder="apikey">
                                                 </div>
                                             </div>
+
 
                                         </div>
                                     </div>
@@ -444,26 +448,14 @@ color: #808080!important;            }
                                             </div>
 
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group">
-                                                    <label>Description</label>
-                                                    <br>
-                                                    <input name="newznabprovider" type="text" class="form-control" id="newznabprovider" placeholder="NZB Planet">
+                                                <br>
+                                                <label>Modules</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+                                                    <input name="modules" type="text" class="form-control" id="modules" placeholder="modules">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label>Newznab URL</label>
-                                                    <br>
-                                                    <input name="newznaburl" type="url" class="form-control" id="newznaburl" placeholder="http://nzb.example.com">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group">
-                                                    <label>Newznab API</label>
-                                                    <br>
-                                                    <input name="newznabapi" type="text" class="form-control" id="newznabapi" placeholder="apikey">
-                                                </div>
-                                            </div>
+
 
                                         </div>
                                     </div>
@@ -476,22 +468,24 @@ color: #808080!important;            }
 
                                             <div class="col-sm-4 col-sm-offset-4">
                                                 <div class="form-group">
-                                                    <div class="form-group">
-                                                        <label>Password</label>
-                                                        <br>
+                                                    <br>
+                                                    <label>Password</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
                                                         <input name="password" type="password" class="form-control" id="password" placeholder="password" required>
                                                     </div>
-                                                    <br>
                                                     <div class="form-group">
-                                                        <label>Confirm password</label>
                                                         <br>
-                                                        <input name="confirm_password" type="password" class="form-control" id="confirm_password" placeholder="password" required>
+                                                        <label>Confirm</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                                                            <input name="confirm_password" type="password" class="form-control" id="confirm_password" placeholder="password" required>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
 
                                     <div class="tab-pane" id="extra">
                                         <div class="row">
@@ -500,63 +494,77 @@ color: #808080!important;            }
                                             </div>
 
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group" rel="tooltip" title="Headphones VIP account is used in Headphones to find better Music results">
-                                                    <label><a href="https://headphones.codeshy.com/vip/" target="_blank">Headphones VIP username</label></a>
-                                                        <br>
+                                                <label><a href="https://headphones.codeshy.com/vip/" target="_blank">Headphones VIP username</label></a>
+                                                    <div class="input-group" rel="tooltip" title="Headphones VIP account is used in Headphones to find better Music results">
+                                                        <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
                                                         <input name="headphonesuser" type="text" class="form-control" id="headphonesuser" placeholder="openflixr">
-                                                </div>
+                                                    </div>
                                             </div>
+
                                             <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label>Headphones VIP password</label>
-                                                    <br>
+                                                <label>Headphones VIP password</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
                                                     <input name="headphonespass" type="password" class="form-control" id="headphonespass" placeholder="password">
                                                 </div>
                                             </div>
+
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group" rel="tooltip" title="AniDB account is used in SickRage to find better Anime results">
-                                                    <label><a href="http://anidb.net" target="_blank">AniDB username</label></a>
-                                                        <br>
+                                                <br>
+                                                <label><a href="http://anidb.net" target="_blank">AniDB username</label></a>
+                                                    <div class="input-group" rel="tooltip" title="AniDB account is used in SickRage to find better Anime results">
+                                                        <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
                                                         <input name="anidbuser" type="text" class="form-control" id="anidbuser" placeholder="openflixr">
-                                                </div>
+                                                    </div>
                                             </div>
+
                                             <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label>AniDB password</label>
-                                                    <br>
+                                                <br>
+                                                <label>AniDB password</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
                                                     <input name="anidbpass" type="password" class="form-control" id="anidbpass" placeholder="password">
                                                 </div>
                                             </div>
+
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group" rel="tooltip" title="Spotify account is needed in mopidy/mopify">
-                                                    <label><a href="http://www.spotify.com" target="_blank">Spotify username</label></a>
-                                                        <br>
+                                                <br>
+                                                <label><a href="http://www.spotify.com" target="_blank">Spotify username</label></a>
+                                                    <div class="input-group" rel="tooltip" title="Spotify account is needed in mopidy/mopify">
+                                                        <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
                                                         <input name="spotuser" type="text" class="form-control" id="spotuser" placeholder="openflixr">
-                                                </div>
+                                                    </div>
                                             </div>
+
                                             <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label>Spotify password</label>
-                                                    <br>
+                                                <br>
+                                                <label>Spotify password</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
                                                     <input name="spotpass" type="password" class="form-control" id="spotpass" placeholder="password">
                                                 </div>
                                             </div>
+
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group" rel="tooltip" title="IMDB public watchlist URL is used in CouchPotato to automatically download movies added to your watchlist">
-                                                    <label><a href="http://www.imdb.com" target="_blank">IMDB public watchlist URL</label></a>
-                                                        <br>
+                                                <br>
+                                                <label><a href="http://www.imdb.com" target="_blank">IMDB public watchlist URL</label></a>
+                                                    <div class="input-group" rel="tooltip" title="IMDB public watchlist URL is used in CouchPotato to automatically download movies added to your watchlist">
+                                                        <span class="input-group-addon"><i class="fa fa-link" aria-hidden="true"></i></span>
                                                         <input name="imdb" type="url" class="form-control" id="imdb" placeholder="http://rss.imdb.com/user/ur12345678/watchlist">
-                                                </div>
+                                                    </div>
                                             </div>
+
                                             <div class="col-sm-5">
-                                                <div class="form-group" rel="tooltip" title="Comic Vine API key is used in Mylar to find better Comic results">
-                                                    <label><a href="http://comicvine.gamespot.com" target="_blank">Comic Vine API key</label></a>
-                                                        <br>
+                                                <br>
+                                                <label><a href="http://comicvine.gamespot.com" target="_blank">Comic Vine API key</label></a>
+                                                    <div class="input-group" rel="tooltip" title="Comic Vine API key is used in Mylar to find better Comic results">
+                                                        <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
                                                         <input name="comicvine" type="text" class="form-control" id="plex" placeholder="apikey">
-                                                </div>
+                                                    </div>
                                             </div>
 
                                         </div>
+                                        <br>
                                     </div>
 
 
