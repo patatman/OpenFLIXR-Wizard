@@ -46,7 +46,7 @@ $(document).ready(function() {
         },
         onTabClick: function(tab, navigation, index) {
             // Disable the posibility to click on tabs
-            return true;
+            return false;
         },
         onTabShow: function(tab, navigation, index) {
             var $total = navigation.find('li').length;
