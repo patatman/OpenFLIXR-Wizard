@@ -63,7 +63,6 @@ jQuery.validator.addMethod('validIP', function(value) {
 
       $(document).ready(function() {
 
-
     $('#registration-form').validate({
         rules: {
             name: {

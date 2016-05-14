@@ -200,7 +200,7 @@ color: #808080!important;            }
 
                                                         <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want to use DHCP.">
                                                             <input type="checkbox" name="dhcp" value="dhcp">
-                                                            <div class="icon" data-toggle="collapse" data-target="collapseTwo" aria-expanded="false">
+                                                            <div class="icon" onclick="$('#collapseExample').hide();">
                                                                 <i class="fa fa-magic"></i>
                                                             </div>
                                                             <h6>DHCP</h6>
@@ -209,7 +209,7 @@ color: #808080!important;            }
                                                     <div class="col-sm-4">
                                                         <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want to use a static IP">
                                                             <input type="checkbox" name="static" value="static">
-                                                            <div class="icon" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false">
+                                                            <div class="icon" onclick="$('#collapseExample').show();">
                                                                 <i class="fa fa-wrench"></i>
                                                             </div>
                                                             <h6>Static</h6>
@@ -217,22 +217,22 @@ color: #808080!important;            }
                                                     </div>
                                                 </div>
                                             </div>
-
-
                                             <div class="collapse" id="collapseExample">
 
                                                 <div class="col-sm-5 col-sm-offset-1">
                                                     <div class="form-group">
+                                                        <br>
                                                         <label>IP address</label>
                                                         <br>
-                                                        <input name="ip" type="text" class="form-control" id="ip" placeholder="E.g. 10.10.10.10">
+                                                        <input name="ip" type="text" class="form-control" id="ip" placeholder="E.g. 10.10.10.10" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-5">
                                                     <div class="form-group">
+                                                        <br>
                                                         <label>Subnet Mask</label>
                                                         <br>
-                                                        <input name="subnet" type="text" class="form-control" id="subnet" placeholder="E.g. 255.255.0.0">
+                                                        <input name="subnet" type="text" class="form-control" id="subnet" placeholder="E.g. 255.255.0.0" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-5 col-sm-offset-1">
@@ -240,7 +240,7 @@ color: #808080!important;            }
                                                         <br>
                                                         <label>Gateway</label>
                                                         <br>
-                                                        <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 10.10.10.1">
+                                                        <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 10.10.10.1" required>
                                                     </div>
                                                 </div>
                                                 <br>
@@ -249,7 +249,7 @@ color: #808080!important;            }
                                                         <br>
                                                         <label>DNS Server</label>
                                                         <br>
-                                                        <input name="dns" type="text" class="form-control" id="dns" placeholder="E.g. 8.8.8.8">
+                                                        <input name="dns" type="text" class="form-control" id="dns" placeholder="E.g. 8.8.8.8" required>
                                                     </div>
                                                 </div>
                                                 <br>
@@ -269,7 +269,7 @@ color: #808080!important;            }
                                                     <div class="col-sm-4 col-sm-offset-2">
                                                         <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want OpenFLIXR to be available only from your local network">
                                                             <input type="checkbox" name="local" value="static">
-                                                            <div class="icon">
+                                                            <div class="icon" onclick="$('#remote').hide();">
                                                                 <i class="fa fa-wheelchair"></i>
                                                             </div>
                                                             <h6>Local</h6>
@@ -279,7 +279,7 @@ color: #808080!important;            }
                                                     <div class="col-sm-4">
                                                         <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want OpenFLIXR to be available from the Internet">
                                                             <input type="checkbox" name="remote" value="dhcp">
-                                                            <div class="icon" data-toggle="collapse" data-target="#remote" aria-expanded="false" aria-controls="remote">
+                                                            <div class="icon" onclick="$('#remote').show();">
                                                                 <i class="fa fa-wheelchair-alt"></i>
                                                             </div>
                                                             <h6>Remote</h6>
@@ -637,7 +637,10 @@ HTPC-Manager <a href="/htpc/settings/#plex" target="_blank"><sup> <i class="fa f
                         </div>
                     </div>
                     <!-- wizard container -->
-
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 </body>
 
 <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
