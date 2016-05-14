@@ -1,42 +1,55 @@
 <?php
 
-# Network settings
+#password
+$password = $_POST['password'];
+
+#network
 $dhcp = $_POST['dhcp'];
 $static = $_POST['static'];
 $ip = $_POST['ip'];
 $subnet = $_POST['subnet'];
 $gateway = $_POST['gateway'];
+$dns = $_POST['dns'];
 
-#Acces settings
+#access
 $local = $_POST['local'];
 $remote = $_POST['remote'];
-#if this is true, show the domainname
 $domainname = $_POST['domainname'];
+$email = $_POST['email'];
 
-#Usenet settings
+#usenet
 $usenetdescription = $_POST['usenetdescription'];
 $usenetservername = $_POST['usenetservername'];
 $usenetusername = $_POST['usenetusername'];
 $usenetpassword = $_POST['usenetpassword'];
-#usenet ssl
-#usenet ssl version
+$usenetport = $_POST['usenetport'];
+$usenetthreads = $_POST['usenetthreads'];
+$usenetssl = $_POST['usenetssl'];
 
-#Newznab
+#newznab
 $newznabprovider = $_POST['newznabprovider'];
 $newznaburl = $_POST['newznaburl'];
 $newznabapi = $_POST['newznabapi'];
 
-#extra settings
-$headphones = $_POST['headphones'];
-$anidb = $_POST['anidb'];
+#modules
+$tvshowdl = $_POST['tvshowdl'];
+$nzbdl = $_POST['nzbdl'];
+$mopidy = $_POST['mopidy'];
+$syncthing = $_POST['syncthing'];
+$hass = $_POST['hass'];
+$ntopng = $_POST['ntopng'];
+
+#extras
+$headphonesuser = $_POST['headphonesuser'];
+$headphonespass = $_POST['headphonespass'];
+$anidbuser = $_POST['anidbuser'];
+$anidbpass = $_POST['anidbpass'];
+$spotuser = $_POST['spotuser'];
+$spotpass = $_POST['spotpass'];
 $imdb = $_POST['imdb'];
-$plex = $_POST['plex'];
+$comicvine = $_POST['comicvine'];
 
-#Login details, actually only the password but who cares, i call it login details.
-$password = $_POST['password'];
-
-
-#things to write the actual config to the system
+#write config.ini
 $file = fopen("config.ini","w");
 fwrite($file,"[network]
 dhcp = $dhcp
@@ -44,31 +57,48 @@ static = $static
 ip = $ip
 subnet = $subnet
 gateway = $gateway
-
-[access]
-local = $local
-remote = $remote
-domain_name = $domainname
-
-[usenet]
-usenet_description = $usenetdescription
-usenet_servername = $usenet_servername
-usenet_username = $usenet_username
-usenet_password = $usenet_password
-
-[newznab]
-newznab_provider = $newznabprovider
-newznab_url = $newznaburl
-newznab_api = $newznabapi
+dns = $dns
 
 [password]
 password = $password
 
-[misc]
-headphones = $headphones
-anidb = $anidb
+[access]
+local = $local
+remote = $remote
+domainname = $domainname
+email = $email
+
+[usenet]
+usenetdescription = $usenetdescription
+usenetservername = $usenetservername
+usenetusername = $usenetusername
+usenetpassword = $usenetpassword
+usenetports = $usenetports
+usenetthreads = $usenetthreads
+usenetssl = $usenetssl
+
+[newznab]
+newznabprovider = $newznabprovider
+newznaburl = $newznaburl
+newznabapi = $newznabapi
+
+[modules]
+tvshowsdl = $tvshowdl
+nzbdl = $nzbdl
+mopidy = $mopidy
+syncthing = $syncthing
+hass = $hass
+ntopng = $ntopng
+
+[extras]
+headphonesuser = $headphonesuser
+headphonespass = $headphonespass
+anidbuser = $anidbuser
+anidbpass = $anidbpass
+spotuser = $spotuser
+spotpass = $spotpass
 imdb = $imdb
-plex = $plex
+comicvine = $comicvine
 ");
 fclose($file);
 ?>
@@ -84,13 +114,8 @@ fclose($file);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>OpenFLIXR setup finish</title>
-
-	<!-- Bootstrap Core CSS -->
+    <title>OpenFLIXR setup review</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/gsdk-base.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -107,7 +132,6 @@ fclose($file);
 <body>
     <div class="image-container set-full-height" style="background-image: url('img/bg.jpg')">
 
-    <!--   Big container   -->
     <div class="container">
         <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
@@ -116,36 +140,39 @@ fclose($file);
 
      	 <div class="wizard-container">
                 <div class="card wizard-card ct-wizard-azzure" id="wizard">
-                <!--        You can switch "ct-wizard-azzure"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"       -->
 
                             <div class="tab-pane" id="setup" name="messagebox">
-                                <h4 class="info-text">Verify settings</h4>
+                              <h4 class="info-text">Verify settings</h4>
                                 <div class="row">
                                     <div class="col-sm-10 col-sm-offset-1">
                                         <div class="col-sm-5 col-sm-offset-1">
-                                        	<h6>Network</h6>
+                                          <label>Network settings</label>
                                       <h8>DHCP</h8><p><?php echo "$dhcp"; ?></p>
                                       <h8>Static</h8><p><?php echo "$static"; ?></p>
-                                			<h8>IP adress</h8><p><?php echo "$ip"; ?></p>
+                                			<h8>IP address</h8><p><?php echo "$ip"; ?></p>
                                 			<h8>Subnet</h8><p><?php echo "$subnet"; ?></p>
                                 			<h8>Gateway</h8><p><?php echo "$gateway"; ?></p>
+                                      <h8>DNS Server</h8><p><?php echo "$dns"; ?></p>
                                         </div>
 
                                         <div class="col-sm-5 col-sm-offset-1">
-											                      <h6>Let's Encypt</h6>
+											                      <label>Let's Encrypt</label>
                                             <h8>Local</h8><p><?php echo "$local"; ?></p>
                                             <h8>Remote</h8><p><?php echo "$remote"; ?></p>
                                             <h8>Domain name</h8><p><?php echo "$domainname"; ?></p>
+                                            <h8>E-mail address</h8><p><?php echo "$email"; ?></p>
                                         </div>
                                       </div>
                                         <div class="col-sm-10 col-sm-offset-1">
                                         <div class="col-sm-5 col-sm-offset-1">
-                                            <h6>Usenet</h6>
+                                            <label>Usenet</label>
                                             <h8>Description</h8><p><?php echo "$usenetdescription"; ?></p>
                                             <h8>Servername</h8><p><?php echo "$usenetservername"; ?></p>
                                             <h8>Username</h8><p><?php echo "$usenetusername"; ?></p>
                                             <h8>Password</h8><p><?php echo "$usenetpassword"; ?></p>
-
+                                            <h8>Port</h8><p><?php echo "$usenetport"; ?></p>
+                                            <h8>Threads</h8><p><?php echo "$usenetthreads"; ?></p>
+                                            <h8>SSL</h8><p><?php echo "$usenetssl"; ?></p>
 
                                         <h8>WORK IN PROGRESS</h8>
                                       </div>
