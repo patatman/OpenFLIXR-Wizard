@@ -22,7 +22,46 @@ jQuery.validator.addMethod('validIP', function(value) {
     return true;
 }, ' Invalid IP Address');
 
-$(document).ready(function() {
+  jQuery.validator.addMethod('validSM', function(value) {
+      var split = value.split('.');
+      if (split.length != 4)
+          return false;
+
+      for (var i=0; i<split.length; i++) {
+          var s = split[i];
+          if (s.length==0 || isNaN(s) || s<0 || s>255)
+              return false;
+      }
+      return true;
+  }, ' Invalid Subnet Mask');
+
+    jQuery.validator.addMethod('validGW', function(value) {
+        var split = value.split('.');
+        if (split.length != 4)
+            return false;
+
+        for (var i=0; i<split.length; i++) {
+            var s = split[i];
+            if (s.length==0 || isNaN(s) || s<0 || s>255)
+                return false;
+        }
+        return true;
+    }, ' Invalid Gateway');
+
+      jQuery.validator.addMethod('validNS', function(value) {
+          var split = value.split('.');
+          if (split.length != 4)
+              return false;
+
+          for (var i=0; i<split.length; i++) {
+              var s = split[i];
+              if (s.length==0 || isNaN(s) || s<0 || s>255)
+                  return false;
+          }
+          return true;
+      }, ' Invalid DNS Server');
+
+      $(document).ready(function() {
 
 
     $('#registration-form').validate({
@@ -57,15 +96,15 @@ $(document).ready(function() {
             },
             subnet: {
                 required: true,
-                validIP: true
+                validSM: true
             },
             gateway: {
                 required: true,
-                validIP: true
+                validGW: true
             },
             dns: {
                 required: true,
-                validIP: true
+                validNS: true
             },
             setup: {
                 required: true

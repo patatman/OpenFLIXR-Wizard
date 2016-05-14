@@ -47,56 +47,143 @@
 
                                 <div class="tab-content">
                                     <div class="tab-pane" id="setup" name="messagebox">
-                                        <h4 class="info-text">Let's go!</h4>
                                         <div class="row">
                                             <div class="col-sm-10 col-sm-offset-1">
-                                                <p><span style="color: #808080;">OpenFLIXR is incredibly feature rich. To make it easier to get started, applications are preconfigured with OpenFLIXR defaults. There are just a few steps&nbsp;to go through to get your own OpenFLIXR up and running!</span></p>
-                                                <p><span style="color: #808080;">This setup&nbsp;should be performed as soon as you’re done reading. It will take care of the following:</span></p>
-                                                <br>
+                                                <p><span style="color: #808080;">OpenFLIXR is incredibly feature rich. Therefore applications are preconfigured with OpenFLIXR defaults. There are just a few steps&nbsp;to go through to get your own OpenFLIXR up and running!</span></p>
+                                                <p><span style="color: #ff52bd;font-weight: bold;">To be able to use OpenFLIXR with default settings, you must use the following directory structure.</span></p>
+                                                <p><span style="color: #808080;">It’s strongly advised to mount ‘download’ (subdirectories will be created at boot time when mounted to a network share), ‘movies’, ‘series’, ’music’ and ‘comics’ folders from a location with enough free disk space like a NAS, external harddrive, etc. OpenFLIXR local storage is seriously constrained when downloading media!</span></p>
+                                                <p><span style="color: #808080;">To make things&nbsp;easier you can use <a href="/webmin/mount/" target="_blank">Webmin<sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a> to accomplish this. OpenFLIXR is case sensitive!</span></p>
                                                 <p><span style="color: #808080;"><style>
-#fac_57324bf4a73ee {
-color: #808080;            }
-#fac_57324bf4a73ee:hover {
-}
-</style>
-<i id="fac_57324bf4a8a02" class="fa fa-check-square-o"></i>
-Ask for a user defined password<br>
-<style>
-#fac_57324bf4a957e {
-color: #808080;            }
-#fac_57324bf4a957e:hover {
-}
-</style>
-<i id="fac_57324bf4a73ee" class="fa fa-check-square-o"></i>
-Guide you through the&nbsp;basic stuff&nbsp;like network, Newznab and Usenet settings<br>
-<style>
-#fac_57324bf4a7ed5 {
-color: #808080;            }
-#fac_57324bf4a7ed5:hover {
-}
-</style>
-<i id="fac_57324bf4a957e" class="fa fa-check-square-o"></i>
-Setup Let’s Encrypt</span>
-                                                    <br>
-                                                    <span style="color: #808080;"><style>
-#fac_57324bf4ab391 {
-color: #808080;            }
-#fac_57324bf4ab391:hover {
-}
-</style>
-<i id="fac_57324bf4a7ed5" class="fa fa-check-square-o"></i>
-Generate random API&nbsp;keys</span>
-                                                    <br>
-                                                    <span style="color: #808080;"><style>
-#fac_57324bf4a8a02 {
-color: #808080;            }
-#fac_57324bf4a8a02:hover {
-}
-</style>
-<i id="fac_57324bf4ab391" class="fa fa-check-square-o"></i>
-Install Plex Media Server (to comply with TOS)</span></p>
+                                                #fac_573361a7db016 {
+                                                color: #808080!important;            }
+                                                #fac_573361a7db016:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7db016" class="fa fa-folder-o"></i>
+                                                /mnt/downloads/</span><span style="color: #808080;"><br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7dc060 {
+                                                color: #808080!important;            }
+                                                #fac_573361a7dc060:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7dc060" class="fa fa-folder-open-o"></i>
+                                                blackholenzb<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7dd1b7 {
+                                                color: #808080!important;            }
+                                                #fac_573361a7dd1b7:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7dd1b7" class="fa fa-folder-open-o"></i>
+                                                blackholenzbget<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7de197 {
+                                                color: #808080!important;            }
+                                                #fac_573361a7de197:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7de197" class="fa fa-folder-open-o"></i>
+                                                complete<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7df24b {
+                                                color: #808080!important;            }
+                                                #fac_573361a7df24b:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7df24b" class="fa fa-folder-open-o"></i>
+                                                incomplete<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7e02c9 {
+                                                color: #808080!important;            }
+                                                #fac_573361a7e02c9:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7e02c9" class="fa fa-folder-open-o"></i>
+                                                music<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7e12ec {
+                                                color: #808080!important;            }
+                                                #fac_573361a7e12ec:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7e12ec" class="fa fa-folder-open-o"></i>
+                                                musicready<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7e2346 {
+                                                color: #808080!important;            }
+                                                #fac_573361a7e2346:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7e2346" class="fa fa-folder-open-o"></i>
+                                                temp<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7e396d {
+                                                color: #808080!important;            }
+                                                #fac_573361a7e396d:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7e396d" class="fa fa-folder-open-o"></i>
+                                                tempcomics<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7e498d {
+                                                color: #808080!important;            }
+                                                #fac_573361a7e498d:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7e498d" class="fa fa-folder-open-o"></i>
+                                                tempseries<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7e59f6 {
+                                                color: #808080!important;            }
+                                                #fac_573361a7e59f6:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7e59f6" class="fa fa-folder-open-o"></i>
+                                                torrentcomplete<br>
+                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
+                                                #fac_573361a7e69f9 {
+                                                color: #808080!important;            }
+                                                #fac_573361a7e69f9:hover {
+                                                }
+                                                </style>
+                                                <i id="fac_573361a7e69f9" class="fa fa-folder-open-o"></i>
+                                                torrentwatch</span></p>
 
-                                                <br>
+                                                <p><span style="color: #808080;"><style>
+#fac_573361a7e7930 {
+color: #808080!important;            }
+#fac_573361a7e7930:hover {
+}
+</style>
+<i id="fac_573361a7e7930" class="fa fa-folder-o"></i>
+/mnt/movies<br>
+</span><span style="color: #808080;"><style>
+#fac_573361a7e897b {
+color: #808080!important;            }
+#fac_573361a7e897b:hover {
+}
+</style>
+<i id="fac_573361a7e897b" class="fa fa-folder-o"></i>
+/mnt/series<br>
+</span><span style="color: #808080;"><style>
+#fac_573361a7e9984 {
+color: #808080!important;            }
+#fac_573361a7e9984:hover {
+}
+</style>
+<i id="fac_573361a7e9984" class="fa fa-folder-o"></i>
+/mnt/music<br>
+</span><span style="color: #808080;"><style>
+#fac_573361a7ead86 {
+color: #808080!important;            }
+#fac_573361a7ead86:hover {
+}
+</style>
+<i id="fac_573361a7ead86" class="fa fa-folder-o"></i>
+/mnt/comics</span></p>
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -150,18 +237,22 @@ Install Plex Media Server (to comply with TOS)</span></p>
                                                 </div>
                                                 <div class="col-sm-5 col-sm-offset-1">
                                                     <div class="form-group">
-                                                        <br><label>Gateway</label>
+                                                        <br>
+                                                        <label>Gateway</label>
                                                         <br>
                                                         <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 10.10.10.1">
                                                     </div>
-                                                </div><br>
+                                                </div>
+                                                <br>
                                                 <div class="col-sm-5">
                                                     <div class="form-group" rel="tooltip" title="Google DNS: 8.8.8.8">
-                                                        <br><label>DNS</label>
+                                                        <br>
+                                                        <label>DNS Server</label>
                                                         <br>
                                                         <input name="dns" type="text" class="form-control" id="dns" placeholder="E.g. 8.8.8.8">
                                                     </div>
-                                                </div><br>
+                                                </div>
+                                                <br>
 
                                             </div>
                                         </div>
@@ -172,7 +263,6 @@ Install Plex Media Server (to comply with TOS)</span></p>
                                             <div class="col-sm-12">
                                                 <h4 class="info-text">How do you want to access OpenFLIXR</h4>
                                             </div>
-
 
                                             <div class="row">
                                                 <div class="col-sm-10 col-sm-offset-1">
@@ -249,7 +339,8 @@ Install Plex Media Server (to comply with TOS)</span></p>
                                                         <br>
                                                         <input name="domainname" type="text" class="form-control" id="domainname" placeholder="example.com" value="www." required rel="tooltip" title="Let's Encrypt certificate will contain both base domain and with www.">
                                                         <br>
-                                                        <br><label>E-mail address (required for lost key recovery)</label>
+                                                        <br>
+                                                        <label>E-mail address (required for lost key recovery)</label>
                                                         <br>
                                                         <input name="email" type="email" class="form-control" id="email" placeholder="somebody@example.com" required>
                                                     </div>
@@ -474,7 +565,7 @@ Install Plex Media Server (to comply with TOS)</span></p>
                                         <h4 class="info-text">Plex integration</h4>
                                         <div class="row">
                                             <div class="col-sm-10 col-sm-offset-1">
-                                                <p><span style="color: #808080;">Tight integration with <a href="https://plex.tv" target="_blank">Plex</a> makes OpenFLIXR even more powerful. For optimum performance, you should configure the following applications with your Plex account.</span></p>
+                                                <p><span style="color: #808080;">Tight integration with <a href="https://plex.tv" target="_blank">Plex</a> makes OpenFLIXR even more powerful. For optimum performance, you should configure the following applications with your Plex account. Click links to directly go to those settings.</span></p>
                                                 <br>
                                                 <p><span style="color: #808080;"><style>
 #fac_57324bf4a73ee {
@@ -483,7 +574,7 @@ color: #808080;            }
 }
 </style>
 <i id="fac_57324bf4a73ee" class="fa fa-check-square-o"></i>
-CouchPotato <a href="/couchpotato/settings/notifications/" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a><br>
+CouchPotato <a href="/couchpotato/settings/notifications/" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a><br>
 <style>
 #fac_57324bf4a7ed5 {
 color: #808080;            }
@@ -491,7 +582,7 @@ color: #808080;            }
 }
 </style>
 <i id="fac_57324bf4a7ed5" class="fa fa-check-square-o"></i>
-SickRage <a href="/sickrage/config/notifications/" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a></span>
+SickRage <a href="/sickrage/config/notifications/" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a></span>
                                                     <br>
                                                     <span style="color: #808080;"><style>
 #fac_57324bf4a8a02 {
@@ -500,7 +591,7 @@ color: #808080;            }
 }
 </style>
 <i id="fac_57324bf4a8a02" class="fa fa-check-square-o"></i>
-PlexPy <a href="/plexpy" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a><br>
+PlexPy <a href="/plexpy" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a><br>
 <style>
 #fac_57324bf4a957e {
 color: #808080;            }
@@ -508,7 +599,7 @@ color: #808080;            }
 }
 </style>
 <i id="fac_57324bf4a957e" class="fa fa-check-square-o"></i>
-PlexRequests.net <a href="/request/admin/authentication" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a></span>
+PlexRequests.net <a href="/request/admin/authentication" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a></span>
                                                     <br>
                                                     <span style="color: #808080;"><style>
 #fac_57324bf4ab391 {
@@ -517,7 +608,7 @@ color: #808080;            }
 }
 </style>
 <i id="fac_57324bf4ab391" class="fa fa-check-square-o"></i>
-HTPC-Manager <a href="/htpc/settings/" target="_blank">Direct link <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></a></span></p>
+HTPC-Manager <a href="/htpc/settings/#plex" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a></span></p>
 
                                                 <h4 class="info-text">
                                             <br>
