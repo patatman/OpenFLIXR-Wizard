@@ -413,7 +413,7 @@ color: #808080!important;            }
                                                 <label>SSL</label>
                                                 <div class="input-group col-xs-4">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
-                                                    <select class="form-control">
+                                                    <select id="usenetssl" class="form-control">
                                                         <option selected>No</option>
                                                         <option>Yes</option>
                                                     </select>
@@ -469,7 +469,7 @@ color: #808080!important;            }
                                                 <label class="col-md-offset-2">TV Shows Downloader</label>
                                                 <div class="input-group col-md-8 col-md-offset-2">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-television" aria-hidden="true"></i></span>
-                                                    <select class="form-control">
+                                                    <select id="tvshowdl" class="form-control">
                                                         <option selected>SickRage</option>
                                                         <option>Sonarr</option>
                                                     </select>
@@ -481,7 +481,7 @@ color: #808080!important;            }
                                                 <label class="col-md-offset-2">NZB Downloader</label>
                                                 <div class="input-group col-md-8 col-md-offset-2">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-download" aria-hidden="true"></i></span>
-                                                    <select class="form-control">
+                                                    <select id="nzbdl" class="form-control">
                                                         <option selected>SABnzbd</option>
                                                         <option>NZBget</option>
                                                     </select>
@@ -493,7 +493,7 @@ color: #808080!important;            }
                                                 <label class="col-md-offset-2">Mopidy/Mopify</label>
                                                 <div class="input-group col-md-8 col-md-offset-2">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-music" aria-hidden="true"></i></span>
-                                                    <select class="form-control">
+                                                    <select id="mopidy" class="form-control">
                                                         <option selected>Enabled</option>
                                                         <option>Disabled</option>
                                                     </select>
@@ -505,7 +505,7 @@ color: #808080!important;            }
                                                 <label class="col-md-offset-2">Syncthing</label>
                                                 <div class="input-group col-md-8 col-md-offset-2">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-refresh" aria-hidden="true"></i></span>
-                                                    <select class="form-control">
+                                                    <select id="syncthing" class="form-control">
                                                         <option selected>Enabled</option>
                                                         <option>Disabled</option>
                                                     </select>
@@ -517,7 +517,7 @@ color: #808080!important;            }
                                                 <label class="col-md-offset-2">Home-Assistant</label>
                                                 <div class="input-group col-md-8 col-md-offset-2">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-home" aria-hidden="true"></i></span>
-                                                    <select class="form-control">
+                                                    <select id="hass" class="form-control">
                                                         <option selected>Enabled</option>
                                                         <option>Disabled</option>
                                                     </select>
@@ -529,7 +529,7 @@ color: #808080!important;            }
                                                 <label class="col-md-offset-2">ntopNG (Network Monitor)</label>
                                                 <div class="input-group col-md-8 col-md-offset-2">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
-                                                    <select class="form-control">
+                                                    <select id="ntopng" class="form-control">
                                                         <option selected>Enabled</option>
                                                         <option>Disabled</option>
                                                     </select>
@@ -652,51 +652,14 @@ color: #808080!important;            }
                                         <h4 class="info-text">Plex integration</h4>
                                         <div class="row">
                                             <div class="col-sm-10 col-sm-offset-1">
-                                                <p><span style="color: #808080;">Tight integration with <a href="https://plex.tv" target="_blank">Plex</a> makes OpenFLIXR even more powerful. For optimum performance, you should configure the following applications with your Plex account. Click links<sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup> to directly go to those settings.</span></p>
+                                                <p><span style="color: #808080;">Tight integration with <a href="https://plex.tv" target="_blank">Plex</a> makes OpenFLIXR even more powerful. For optimum performance, you should configure the following applications with your Plex account. Click buttons to go directly to those settings.</span></p>
                                                 <br>
-                                                <p><span style="color: #808080;"><style>
-#fac_57324bf4a73ee {
-color: #808080;            }
-#fac_57324bf4a73ee:hover {
-}
-</style>
-<i id="fac_57324bf4a73ee" class="fa fa-check-square-o"></i>
-CouchPotato <a href="/couchpotato/settings/notifications/" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a><br>
-<style>
-#fac_57324bf4a7ed5 {
-color: #808080;            }
-#fac_57324bf4a7ed5:hover {
-}
-</style>
-<i id="fac_57324bf4a7ed5" class="fa fa-check-square-o"></i>
-SickRage <a href="/sickrage/config/notifications/" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a></span>
-                                                    <br>
-                                                    <span style="color: #808080;"><style>
-#fac_57324bf4a8a02 {
-color: #808080;            }
-#fac_57324bf4a8a02:hover {
-}
-</style>
-<i id="fac_57324bf4a8a02" class="fa fa-check-square-o"></i>
-PlexPy <a href="/plexpy" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a><br>
-<style>
-#fac_57324bf4a957e {
-color: #808080;            }
-#fac_57324bf4a957e:hover {
-}
-</style>
-<i id="fac_57324bf4a957e" class="fa fa-check-square-o"></i>
-PlexRequests.net <a href="/request/admin/authentication" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a></span>
-                                                    <br>
-                                                    <span style="color: #808080;"><style>
-#fac_57324bf4ab391 {
-color: #808080;            }
-#fac_57324bf4ab391:hover {
-}
-</style>
-<i id="fac_57324bf4ab391" class="fa fa-check-square-o"></i>
-HTPC-Manager <a href="/htpc/settings/#plex" target="_blank"><sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a></span></p>
-
+                                                <center>
+                                                    <a style="width: 40%;" href="/couchpotato/settings/notifications/" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">CouchPotato</a>
+                                                    <a style="width: 40%;" href="/sickrage/config/notifications/" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">SickRage</a>
+                                                    <a style="width: 40%;" href="/plexpy" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">PlexPy</a>
+                                                    <a style="width: 40%;" href="/request/admin/authentication" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">PlexRequests</a>
+                                                    <a style="width: 40%;" href="/htpc/settings/#plex" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">HTPC Manager</a></center>
                                                 <h4 class="info-text">
                                             <br>
                                             <br /> Click <b>finish</b> to review settings<br />

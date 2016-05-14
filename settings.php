@@ -73,7 +73,7 @@ usenetdescription = $usenetdescription
 usenetservername = $usenetservername
 usenetusername = $usenetusername
 usenetpassword = $usenetpassword
-usenetports = $usenetports
+usenetport = $usenetport
 usenetthreads = $usenetthreads
 usenetssl = $usenetssl
 
