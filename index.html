@@ -50,9 +50,9 @@
                                         <div class="row">
                                             <div class="col-sm-10 col-sm-offset-1">
                                                 <p><span style="color: #808080;">OpenFLIXR is incredibly feature rich. Therefore applications are preconfigured with OpenFLIXR defaults. There are just a few steps&nbsp;to go through to get your own OpenFLIXR up and running!</span></p>
-                                                <p><span style="color: #ff52bd;font-weight: bold;">To be able to use OpenFLIXR with default settings, you must use the following directory structure.</span></p>
-                                                <p><span style="color: #808080;">It’s strongly advised to mount ‘download’ (subdirectories will be created at boot time when mounted to a network share), ‘movies’, ‘series’, ’music’ and ‘comics’ folders from a location with enough free disk space like a NAS, external harddrive, etc. OpenFLIXR local storage is seriously constrained when downloading media!</span></p>
-                                                <p><span style="color: #808080;">To make things&nbsp;easier you can use <a href="/webmin/mount/" target="_blank">Webmin<sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a> to accomplish this. OpenFLIXR is case sensitive!</span></p>
+                                                <p><span style="color: #808080;">Before you can use OpenFLIXR, you need to mount ‘download’ (subdirectories will be created at boot time when mounted to a network share), ‘movies’, ‘series’, ’music’ and ‘comics’ folders from a location with enough free disk space like a NAS, external harddrive, etc.</span></p>
+                                                <p><span style="color: #808080;">To make things&nbsp;easier you can use <a href="/webmin/mount/" target="_blank">Webmin<sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a> to accomplish this. OpenFLIXR is case sensitive.</span></p>
+                                                <p><span style="color: #ff52bd;font-weight: bold;">To be able to use OpenFLIXR with default settings, you must use the following directory structure!</span></p>
                                                 <p><span style="color: #808080;"><style>
                                                 #fac_573361a7db016 {
                                                 color: #808080!important;            }
@@ -60,7 +60,7 @@
                                                 }
                                                 </style>
                                                 <i id="fac_573361a7db016" class="fa fa-folder-o"></i>
-                                                /mnt/downloads/</span><span style="color: #808080;"><br>
+                                                /mnt/<b>downloads</b>/</span><span style="color: #808080;"><br>
                                                 </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
                                                 #fac_573361a7dc060 {
                                                 color: #808080!important;            }
@@ -157,7 +157,7 @@ color: #808080!important;            }
 }
 </style>
 <i id="fac_573361a7e7930" class="fa fa-folder-o"></i>
-/mnt/movies<br>
+/mnt/<b>movies</b><br>
 </span><span style="color: #808080;"><style>
 #fac_573361a7e897b {
 color: #808080!important;            }
@@ -165,7 +165,7 @@ color: #808080!important;            }
 }
 </style>
 <i id="fac_573361a7e897b" class="fa fa-folder-o"></i>
-/mnt/series<br>
+/mnt/<b>series</b><br>
 </span><span style="color: #808080;"><style>
 #fac_573361a7e9984 {
 color: #808080!important;            }
@@ -173,7 +173,7 @@ color: #808080!important;            }
 }
 </style>
 <i id="fac_573361a7e9984" class="fa fa-folder-o"></i>
-/mnt/music<br>
+/mnt/<b>music</b><br>
 </span><span style="color: #808080;"><style>
 #fac_573361a7ead86 {
 color: #808080!important;            }
@@ -181,7 +181,7 @@ color: #808080!important;            }
 }
 </style>
 <i id="fac_573361a7ead86" class="fa fa-folder-o"></i>
-/mnt/comics</span></p>
+/mnt/<b>comics</b></span></p>
 
 
                                             </div>
@@ -219,7 +219,7 @@ color: #808080!important;            }
                                                     <br>
                                                     <label>IP Address</label>
                                                     <div class="input-group">
-                                                        <span style="color:#808080" class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                                                        <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
                                                         <input type="text" class="form-control" id="ip" name="ip" placeholder="E.g. 10.10.10.10" required>
                                                     </div>
                                                 </div>
@@ -227,7 +227,7 @@ color: #808080!important;            }
                                                     <br>
                                                     <label>Subnet Mask</label>
                                                     <div class="input-group">
-                                                        <span style="color:#808080" class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                                                        <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
                                                         <input name="subnet" type="text" class="form-control" id="subnet" placeholder="E.g. 255.255.0.0" required>
                                                     </div>
                                                 </div>
@@ -235,7 +235,7 @@ color: #808080!important;            }
                                                     <br>
                                                     <label>Gateway</label>
                                                     <div class="input-group">
-                                                        <span style="color:#808080" class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                                                        <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
                                                         <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 10.10.10.1" required>
                                                     </div>
                                                 </div>
@@ -243,7 +243,7 @@ color: #808080!important;            }
                                                     <br>
                                                     <label>DNS Server</label>
                                                     <div class="input-group" rel="tooltip" title="Google DNS: 8.8.8.8">
-                                                        <span style="color:#808080" class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                                                        <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
                                                         <input name="dns" type="text" class="form-control" id="dns" placeholder="E.g. 8.8.8.8" required>
                                                     </div>
                                                 </div>
@@ -340,7 +340,7 @@ color: #808080!important;            }
                                                         <div>
                                                             <label>E-mail address (required for lost key recovery)</label>
                                                             <div class="input-group">
-                                                                <span class="input-group-addon">&nbsp&nbsp<i class="fa fa-envelope-o" aria-hidden="true">&nbsp&nbsp</i></span>
+                                                                <span class="input-group-addon">&nbsp&nbsp<i class="fa fa-at" aria-hidden="true">&nbsp&nbsp&nbsp</i></span>
                                                                 <input name="email" type="email" class="form-control" id="email" placeholder="somebody@example.com" required>
                                                             </div>
                                                         </div>
@@ -391,15 +391,11 @@ color: #808080!important;            }
                                             </div>
 
                                             <div class="col-sm-5 col-sm-offset-1">
-                                                <div class="form-group">
-                                                    <br>
-                                                    <label>SSL</label>
-                                                    <select class="form-control">
-                                                        <option disabled="" selected="No">No</option>
-                                                        <option>TLS v1</option>
-                                                        <option>TLS v1.1</option>
-                                                        <option>TLS v1.2</option>
-                                                    </select>
+                                                <br>
+                                                <label>Port</label>
+                                                <div class="input-group">
+                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+                                                    <input name="usenetport" type="text" class="form-control" id="usenetport" value="119">
                                                 </div>
                                             </div>
 
@@ -408,7 +404,19 @@ color: #808080!important;            }
                                                 <label>Number of threads</label>
                                                 <div class="input-group">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
-                                                    <input name="usenetthreads" type="password" class="form-control" id="usenetthreads" placeholder="4">
+                                                    <input name="usenetthreads" type="text" class="form-control" id="usenetthreads" value="4">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-5 col-sm-offset-1">
+                                                <br>
+                                                <label>SSL</label>
+                                                <div class="input-group col-xs-4">
+                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
+                                                    <select class="form-control">
+                                                        <option selected>No</option>
+                                                        <option>Yes</option>
+                                                    </select>
                                                 </div>
                                             </div>
 

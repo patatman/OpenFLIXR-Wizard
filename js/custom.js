@@ -126,6 +126,14 @@ jQuery.validator.addMethod('validIP', function(value) {
                 required: true
             },
 
+            usenetport: {
+                digits: true
+            },
+
+            usenetthreads: {
+                digits: true
+            },
+
             agree: "required"
 
         },
