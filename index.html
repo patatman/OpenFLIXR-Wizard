@@ -220,7 +220,7 @@ color: #808080!important;            }
                                                     <label>IP Address</label>
                                                     <div class="input-group">
                                                         <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
-                                                        <input type="text" class="form-control" id="ip" name="ip" placeholder="E.g. 10.10.10.10" required>
+                                                        <input type="text" class="form-control" id="ip" name="ip" placeholder="E.g. 10.200.10.50" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-5">
@@ -228,7 +228,7 @@ color: #808080!important;            }
                                                     <label>Subnet Mask</label>
                                                     <div class="input-group">
                                                         <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
-                                                        <input name="subnet" type="text" class="form-control" id="subnet" placeholder="E.g. 255.255.0.0" required>
+                                                        <input name="subnet" type="text" class="form-control" id="subnet" placeholder="E.g. 255.255.255.0" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-5 col-sm-offset-1">
@@ -236,7 +236,7 @@ color: #808080!important;            }
                                                     <label>Gateway</label>
                                                     <div class="input-group">
                                                         <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
-                                                        <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 10.10.10.1" required>
+                                                        <input name="gateway" type="text" class="form-control" id="gateway" placeholder="E.g. 10.200.10.1" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-5">
@@ -420,7 +420,8 @@ color: #808080!important;            }
                                                 </div>
                                             </div>
 
-                                        </div><br>
+                                        </div>
+                                        <br>
                                     </div>
                                     <div class="tab-pane" id="newznab">
                                         <div class="row">
@@ -460,18 +461,80 @@ color: #808080!important;            }
                                     <div class="tab-pane" id="modules">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <h4 class="info-text">Select modules to enable</h4>
+                                                <h4 class="info-text">Select modules</h4>
                                             </div>
 
-                                            <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="col-md-4">
                                                 <br>
-                                                <label>Modules</label>
-                                                <div class="input-group">
-                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
-                                                    <input name="modules" type="text" class="form-control" id="modules" placeholder="modules">
+                                                <label class="col-md-offset-2">TV Shows Downloader</label>
+                                                <div class="input-group col-md-8 col-md-offset-2">
+                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-television" aria-hidden="true"></i></span>
+                                                    <select class="form-control">
+                                                        <option selected>SickRage</option>
+                                                        <option>Sonarr</option>
+                                                    </select>
                                                 </div>
                                             </div>
 
+                                            <div class="col-md-4">
+                                                <br>
+                                                <label class="col-md-offset-2">NZB Downloader</label>
+                                                <div class="input-group col-md-8 col-md-offset-2">
+                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-download" aria-hidden="true"></i></span>
+                                                    <select class="form-control">
+                                                        <option selected>SABnzbd</option>
+                                                        <option>NZBget</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <br>
+                                                <label class="col-md-offset-2">Mopidy/Mopify</label>
+                                                <div class="input-group col-md-8 col-md-offset-2">
+                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-music" aria-hidden="true"></i></span>
+                                                    <select class="form-control">
+                                                        <option selected>Enabled</option>
+                                                        <option>Disabled</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <br>
+                                                <label class="col-md-offset-2">Syncthing</label>
+                                                <div class="input-group col-md-8 col-md-offset-2">
+                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+                                                    <select class="form-control">
+                                                        <option selected>Enabled</option>
+                                                        <option>Disabled</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <br>
+                                                <label class="col-md-offset-2">Home-Assistant</label>
+                                                <div class="input-group col-md-8 col-md-offset-2">
+                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                                                    <select class="form-control">
+                                                        <option selected>Enabled</option>
+                                                        <option>Disabled</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <br>
+                                                <label class="col-md-offset-2">ntopNG (Network Monitor)</label>
+                                                <div class="input-group col-md-8 col-md-offset-2">
+                                                    <span style="color:#808080" class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
+                                                    <select class="form-control">
+                                                        <option selected>Enabled</option>
+                                                        <option>Disabled</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
                                         </div>
                                     </div>
