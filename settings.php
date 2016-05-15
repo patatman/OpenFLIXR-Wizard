@@ -210,7 +210,7 @@ fclose($file);
 
                                     </div>
                                     <div class="pull-left">
-                                        <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Go back' />
+                                        <a href="javascript:history.back()"><input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Go back' /></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
