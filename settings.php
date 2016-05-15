@@ -135,7 +135,7 @@ fclose($file);
 </head>
 
 <body>
-    <div class="image-container set-full-height" style="background-image: url('img/bg.jpg')">
+    <div class="image-container set-full-height" style="background-color: #8C8C8C)">
 
       <!-- needs realtime output of console -->
 
