@@ -137,9 +137,9 @@ fclose($file);
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
+            <div class="tab-content">
               <div class="wizard-container">
                 <div class="card wizard-card ct-wizard-azzure" id="wizard">
-                  <div class="tab-content">
 
                             <div class="tab-pane" id="setup" name="messagebox">
                               <h4 class="info-text">Verify settings</h4>
