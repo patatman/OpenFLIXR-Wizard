@@ -56,7 +56,7 @@
                                                 <p><span style="color: #808080;">OpenFLIXR is incredibly feature rich. Therefore applications are preconfigured with OpenFLIXR defaults. There are just a few steps&nbsp;to go through to get your own OpenFLIXR up and running!</span></p>
                                                 <p><span style="color: #808080;">Finishing this setup will automatically create random API keys and install Plex Media Server.</span></p>
                                                 <p><span style="color: #808080;">Before you can use OpenFLIXR, you need to mount ‘downloads’ (subdirectories will be created at boot time when mounted to a network share), ‘movies’, ‘series’, ’music’ and ‘comics’ folders from a location with enough free disk space like a NAS, external harddrive, etc.</span></p>
-                                                <p><span style="color: #808080;">To make things&nbsp;easier you can use <a href="/webmin/mount/" target="_blank" rel="tooltip" title="Default username and password are: openflixr">Webmin<sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a> to accomplish this. OpenFLIXR is case sensitive.</span></p>
+                                                <p><span style="color: #808080;">To make things&nbsp;easier you can use <a href="/webmin/mount/" target="_blank" rel="tooltip" title="Default username and password: openflixr">Webmin<sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a> to accomplish this. OpenFLIXR is case sensitive.</span></p>
                                                 <p><span style="color: #ff52bd;font-weight: bold;">To be able to use OpenFLIXR with default settings, you must use the following directory structure!</span></p>
                                                 <center>
                                                     <p><span style="color: #808080;">If you need help, use the <a href="http://www.openflixr.com/forum" target="_blank">forums</a>.</span></p>
@@ -219,7 +219,7 @@
                                                     </div>
 
                                                     <div class="col-sm-4">
-                                                        <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want OpenFLIXR to be available from the Internet">
+                                                        <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want OpenFLIXR to be available from your local network and the Internet">
                                                             <input type="checkbox" name="remote" value="remote.on" id="remote.on">
                                                             <div class="icon" onclick="$('#remote').show();">
                                                                 <i class="fa fa-cloud"></i>
@@ -325,7 +325,7 @@
                                                 <label>Username</label>
                                                 <div class="input-group">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                                    <input name="usenetusername" type="text" class="form-control" id="usenetusername" placeholder="openflixr">
+                                                    <input name="usenetusername" type="text" class="form-control" id="usenetusername" placeholder="username">
                                                 </div>
                                             </div>
 
@@ -520,11 +520,11 @@
                                                 <h4 class="info-text">Optional settings</h4>
                                             </div>
 
-                                            <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="col-sm-5 col-sm-offset-1" rel="tooltip" title="Headphones VIP account is used in Headphones to find better Music results">
                                                 <label><a href="https://headphones.codeshy.com/vip/" target="_blank">Headphones VIP username</label></a>
-                                                    <div class="input-group" rel="tooltip" title="Headphones VIP account is used in Headphones to find better Music results">
+                                                    <div class="input-group">
                                                         <span style="color:#808080" class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                                        <input name="headphonesuser" type="text" class="form-control" id="headphonesuser" placeholder="openflixr">
+                                                        <input name="headphonesuser" type="text" class="form-control" id="headphonesuser" placeholder="username">
                                                     </div>
                                             </div>
 
@@ -536,12 +536,12 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="col-sm-5 col-sm-offset-1" rel="tooltip" title="AniDB account is used in SickRage to find better Anime results">
                                                 <br>
                                                 <label><a href="http://anidb.net" target="_blank">AniDB username</label></a>
-                                                    <div class="input-group" rel="tooltip" title="AniDB account is used in SickRage to find better Anime results">
+                                                    <div class="input-group">
                                                         <span style="color:#808080" class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                                        <input name="anidbuser" type="text" class="form-control" id="anidbuser" placeholder="openflixr">
+                                                        <input name="anidbuser" type="text" class="form-control" id="anidbuser" placeholder="username">
                                                     </div>
                                             </div>
 
@@ -554,12 +554,12 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="col-sm-5 col-sm-offset-1" rel="tooltip" title="Spotify account is needed in mopidy/mopify">
                                                 <br>
                                                 <label><a href="http://www.spotify.com" target="_blank">Spotify username</label></a>
-                                                    <div class="input-group" rel="tooltip" title="Spotify account is needed in mopidy/mopify">
+                                                    <div class="input-group">
                                                         <span style="color:#808080" class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                                        <input name="spotuser" type="text" class="form-control" id="spotuser" placeholder="openflixr">
+                                                        <input name="spotuser" type="text" class="form-control" id="spotuser" placeholder="username">
                                                     </div>
                                             </div>
 
@@ -572,19 +572,19 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-sm-5 col-sm-offset-1">
+                                            <div class="col-sm-5 col-sm-offset-1" rel="tooltip" title="IMDB public watchlist URL is used in CouchPotato to automatically download movies added to your watchlist">
                                                 <br>
                                                 <label><a href="http://www.imdb.com" target="_blank">IMDB public watchlist URL</label></a>
-                                                    <div class="input-group" rel="tooltip" title="IMDB public watchlist URL is used in CouchPotato to automatically download movies added to your watchlist">
+                                                    <div class="input-group">
                                                         <span style="color:#808080" class="input-group-addon"><i class="fa fa-link" aria-hidden="true"></i></span>
                                                         <input name="imdb" type="url" class="form-control" id="imdb" placeholder="http://rss.imdb.com/user/ur12345678/watchlist">
                                                     </div>
                                             </div>
 
-                                            <div class="col-sm-5">
+                                            <div class="col-sm-5" rel="tooltip" title="Comic Vine API key is used in Mylar to find better Comic results">
                                                 <br>
                                                 <label><a href="http://comicvine.gamespot.com" target="_blank">Comic Vine API key</label></a>
-                                                    <div class="input-group" rel="tooltip" title="Comic Vine API key is used in Mylar to find better Comic results">
+                                                    <div class="input-group">
                                                         <span style="color:#808080" class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
                                                         <input name="comicvine" type="text" class="form-control" id="plex" placeholder="apikey">
                                                     </div>
@@ -603,13 +603,13 @@
                                                 <p><span style="color: #808080;">Tight integration with <a href="https://plex.tv" target="_blank">Plex</a> makes OpenFLIXR even more powerful. For optimum performance, you should configure the following applications with your Plex account. Click buttons to go directly to those settings.</span></p>
                                                 <br>
                                                 <center>
-                                                    <a style="width: 40%;" href="/couchpotato/settings/notifications/" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">CouchPotato</a>
-                                                    <a style="width: 40%;" href="/sickrage/config/notifications/" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">SickRage</a>
-                                                    <a style="width: 40%;" href="/plexpy" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">PlexPy</a>
-                                                    <a style="width: 40%;" href="/request/admin/authentication" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">PlexRequests</a>
-                                                    <a style="width: 40%;" href="/htpc/settings/#plex" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">HTPC Manager</a></center>
-                                            <br>
-                                            <h4 class="info-text">If you're sure all settings are correct, click <b>finish</b> to continue</h4>
+                                                    <a style="width: 35%;" href="/couchpotato/settings/notifications/" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">CouchPotato</a>
+                                                    <a style="width: 35%;" href="/sickrage/config/notifications/" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">SickRage</a>
+                                                    <a style="width: 35%;" href="/plexpy" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">PlexPy</a>
+                                                    <a style="width: 35%;" href="/request/admin/authentication" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">PlexRequests</a>
+                                                    <a style="width: 35%;" href="/htpc/settings/#plex" target="_blank" class="btn btn-block btn-sm btn-info btn-fill">HTPC Manager</a></center>
+                                            <br><br>
+                                            <h4 style="margin: 0;" class="info-text">If you're sure all settings are correct, click <b>finish</b> to continue</h4>
                                             <h4 class="info-text">Setup will take a while, system will reboot when done</h4>
                                             </div>
                                         </div>
