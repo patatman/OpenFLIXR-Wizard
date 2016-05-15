@@ -37,7 +37,7 @@
                                     <li><a href="#setup" data-toggle="tab">Info</a></li>
                                     <li><a href="#login" data-toggle="tab">Password</a></li>
                                     <li><a href="#network" data-toggle="tab">Network</a></li>
-                                    <li><a href="#ssl" data-toggle="tab">Letsencrypt</a></li>
+                                    <li><a href="#ssl" data-toggle="tab">Access</a></li>
                                     <li><a href="#usenet" data-toggle="tab">Usenet</a></li>
                                     <li><a href="#newznab" data-toggle="tab">Newznab</a></li>
                                     <li><a href="#modules" data-toggle="tab">Modules</a></li>
@@ -48,138 +48,84 @@
                                 <div class="tab-content">
                                     <div class="tab-pane" id="setup" name="messagebox">
                                         <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="info-text">Welcome to your OpenFLIXR</h4>
+                                            </div>
+
                                             <div class="col-sm-10 col-sm-offset-1">
                                                 <p><span style="color: #808080;">OpenFLIXR is incredibly feature rich. Therefore applications are preconfigured with OpenFLIXR defaults. There are just a few steps&nbsp;to go through to get your own OpenFLIXR up and running!</span></p>
-                                                <p><span style="color: #808080;">Before you can use OpenFLIXR, you need to mount ‘download’ (subdirectories will be created at boot time when mounted to a network share), ‘movies’, ‘series’, ’music’ and ‘comics’ folders from a location with enough free disk space like a NAS, external harddrive, etc.</span></p>
-                                                <p><span style="color: #808080;">To make things&nbsp;easier you can use <a href="/webmin/mount/" target="_blank">Webmin<sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a> to accomplish this. OpenFLIXR is case sensitive.</span></p>
+                                                <p><span style="color: #808080;">Before you can use OpenFLIXR, you need to mount ‘downloads’ (subdirectories will be created at boot time when mounted to a network share), ‘movies’, ‘series’, ’music’ and ‘comics’ folders from a location with enough free disk space like a NAS, external harddrive, etc.</span></p>
+                                                <p><span style="color: #808080;">To make things&nbsp;easier you can use <a href="/webmin/mount/" target="_blank" rel="tooltip" title="Default username and password are: openflixr">Webmin<sup> <i class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></i></sup></a> to accomplish this. OpenFLIXR is case sensitive.</span></p>
                                                 <p><span style="color: #ff52bd;font-weight: bold;">To be able to use OpenFLIXR with default settings, you must use the following directory structure!</span></p>
-                                                <p><span style="color: #808080;"><style>
-                                                #fac_573361a7db016 {
-                                                color: #808080!important;            }
-                                                #fac_573361a7db016:hover {
-                                                }
-                                                </style>
-                                                <i id="fac_573361a7db016" class="fa fa-folder-o"></i>
-                                                /mnt/<b>downloads</b>/</span><span style="color: #808080;"><br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7dc060 {
-                                                color: #808080!important;            }
-                                                #fac_573361a7dc060:hover {
-                                                }
-                                                </style>
+                                                <center>
+                                                    <p><span style="color: #808080;">If you need help, use the <a href="http://www.openflixr.com/forum" target="_blank">forums</a>.</span></p>
+                                                </center>
+                                                <div onclick="$('#downloads').toggle();">
+                                                    <p style="margin:0;"><span style="color: #808080;">
+                                                <a style="text-decoration: none;cursor: pointer;"><i id="fac_573361a7db016" class="fa fa-folder-o"></i>
+                                                /mnt/<b>downloads/ ...</b></a></span></p>
+                                                </div>
+                                                <div class="collapse" id="downloads">
+                                                    <p style="margin:0;"><span style="color: #808080;">
+                                                &nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7dc060" class="fa fa-folder-open-o"></i>
-                                                blackholenzb<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7dd1b7 {
-                                                color: #808080!important;            }
-                                                #fac_573361a7dd1b7:hover {
-                                                }
-                                                </style>
+                                                blackholenzb
+                                              </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7dd1b7" class="fa fa-folder-open-o"></i>
-                                                blackholenzbget<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7de197 {
-                                                color: #808080!important;            }
-                                                #fac_573361a7de197:hover {
-                                                }
-                                                </style>
+                                                blackholenzbget
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7de197" class="fa fa-folder-open-o"></i>
-                                                complete<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7df24b {
-                                                color: #808080!important;            }
-                                                #fac_573361a7df24b:hover {
-                                                }
-                                                </style>
+                                                complete
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7df24b" class="fa fa-folder-open-o"></i>
-                                                incomplete<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7e02c9 {
-                                                color: #808080!important;            }
-                                                #fac_573361a7e02c9:hover {
-                                                }
-                                                </style>
+                                                incomplete
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7e02c9" class="fa fa-folder-open-o"></i>
-                                                music<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7e12ec {
-                                                color: #808080!important;            }
-                                                #fac_573361a7e12ec:hover {
-                                                }
-                                                </style>
+                                                music
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7e12ec" class="fa fa-folder-open-o"></i>
-                                                musicready<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7e2346 {
-                                                color: #808080!important;            }
-                                                #fac_573361a7e2346:hover {
-                                                }
-                                                </style>
+                                                musicready
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7e2346" class="fa fa-folder-open-o"></i>
-                                                temp<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7e396d {
-                                                color: #808080!important;            }
-                                                #fac_573361a7e396d:hover {
-                                                }
-                                                </style>
+                                                temp
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7e396d" class="fa fa-folder-open-o"></i>
-                                                tempcomics<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7e498d {
-                                                color: #808080!important;            }
-                                                #fac_573361a7e498d:hover {
-                                                }
-                                                </style>
+                                                tempcomics
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7e498d" class="fa fa-folder-open-o"></i>
-                                                tempseries<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7e59f6 {
-                                                color: #808080!important;            }
-                                                #fac_573361a7e59f6:hover {
-                                                }
-                                                </style>
+                                                tempseries
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7e59f6" class="fa fa-folder-open-o"></i>
-                                                torrentcomplete<br>
-                                                </span><span style="color: #808080;">&nbsp; &nbsp; &nbsp;<style>
-                                                #fac_573361a7e69f9 {
-                                                color: #808080!important;            }
-                                                #fac_573361a7e69f9:hover {
-                                                }
-                                                </style>
+                                                torrentcomplete
+                                                </span></p>
+                                                    <p style="margin:0;"><span style="color: #808080;">&nbsp; &nbsp; &nbsp;
                                                 <i id="fac_573361a7e69f9" class="fa fa-folder-open-o"></i>
                                                 torrentwatch</span></p>
 
-                                                <p><span style="color: #808080;"><style>
-#fac_573361a7e7930 {
-color: #808080!important;            }
-#fac_573361a7e7930:hover {
-}
-</style>
+                                                </div>
+
+                                                <p style="margin:0;"><span style="color: #808080;">
 <i id="fac_573361a7e7930" class="fa fa-folder-o"></i>
-/mnt/<b>movies</b><br>
-</span><span style="color: #808080;"><style>
-#fac_573361a7e897b {
-color: #808080!important;            }
-#fac_573361a7e897b:hover {
-}
-</style>
+/mnt/<b>movies</b>
+</span></p>
+                                                <p style="margin:0;"><span style="color: #808080;">
 <i id="fac_573361a7e897b" class="fa fa-folder-o"></i>
-/mnt/<b>series</b><br>
-</span><span style="color: #808080;"><style>
-#fac_573361a7e9984 {
-color: #808080!important;            }
-#fac_573361a7e9984:hover {
-}
-</style>
+/mnt/<b>series</b>
+</span></p>
+                                                <p style="margin:0;"><span style="color: #808080;">
 <i id="fac_573361a7e9984" class="fa fa-folder-o"></i>
-/mnt/<b>music</b><br>
-</span><span style="color: #808080;"><style>
-#fac_573361a7ead86 {
-color: #808080!important;            }
-#fac_573361a7ead86:hover {
-}
-</style>
+/mnt/<b>music</b>
+</span></p>
+                                                <p style="margin:0;"><span style="color: #808080;">
 <i id="fac_573361a7ead86" class="fa fa-folder-o"></i>
 /mnt/<b>comics</b></span></p>
 
@@ -395,7 +341,7 @@ color: #808080!important;            }
                                                 <label>Port</label>
                                                 <div class="input-group">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-circle-o" aria-hidden="true"></i></span>
-                                                    <input name="usenetport" type="text" class="form-control" id="usenetport" value="119">
+                                                    <input name="usenetport" type="number" class="form-control" id="usenetport" value="119">
                                                 </div>
                                             </div>
 
@@ -404,7 +350,7 @@ color: #808080!important;            }
                                                 <label>Number of threads</label>
                                                 <div class="input-group">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
-                                                    <input name="usenetthreads" type="text" class="form-control" id="usenetthreads" value="4">
+                                                    <input name="usenetthreads" type="number" class="form-control" id="usenetthreads" value="4">
                                                 </div>
                                             </div>
 
@@ -413,9 +359,9 @@ color: #808080!important;            }
                                                 <label>SSL</label>
                                                 <div class="input-group col-xs-4">
                                                     <span style="color:#808080" class="input-group-addon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
-                                                    <select id="usenetssl" class="form-control">
-                                                        <option selected>No</option>
-                                                        <option>Yes</option>
+                                                    <select name="usenetssl" id="usenetssl" class="form-control">
+                                                        <option value="no" selected>No</option>
+                                                        <option value="yes">Yes</option>
                                                     </select>
                                                 </div>
                                             </div>
