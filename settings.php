@@ -1,5 +1,9 @@
 <?php
-
+var_dump($_POST);
+foreach ($_POST as $param_name => $param_val) {
+    echo "Param: $param_name; Value: $param_val<br />\n";
+}
+extract($_POST);
 #password
 $password = $_POST['password'];
 
