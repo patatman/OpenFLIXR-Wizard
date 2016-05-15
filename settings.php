@@ -1,7 +1,10 @@
 <?php
+/*
 foreach ($_POST as $param_name => $param_val) {
     echo "Param: $param_name; Value: $param_val<br />\n";
 }
+*/
+
 #password
 $password = $_POST['password'];
 
@@ -203,16 +206,6 @@ fclose($file);
                                   </div>
                                 </div>
                             </div>
-                                <div class="pull-right">
-                                     <button type="button" class="btn btn-default">Go!</button>
-                                    <?php
-                                #    $stringData = "Network Settings:\n";
-                                #    fwrite($fh, $stringData);
-                                #    $stringData = "hostname: $hostname"
-                                #    fwrite($fh, $stringData);
-                                #9 DFO:    fclose($fh);
-                                ?>
-                                </div>
                                 <div class="wizard-footer">
                                     <div class="pull-right">
                                         <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='finish' value='Confirm' />
@@ -225,5 +218,5 @@ fclose($file);
                                 </div>
 
                         </div>
-                        </html>
-                    </body>
+                      </body>
+                  </html>
