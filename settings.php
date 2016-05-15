@@ -119,7 +119,7 @@ fclose($file);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>OpenFLIXR setup review</title>
+    <title>OpenFLIXR setup finished</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/gsdk-base.css" rel="stylesheet" />
@@ -138,71 +138,8 @@ fclose($file);
     <div class="image-container set-full-height" style="background-image: url('img/bg.jpg')">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <div class="tab-content">
-              <div class="wizard-container">
-                <div class="card wizard-card ct-wizard-azzure" id="wizard">
 
-                            <div class="tab-pane" id="setup" name="messagebox">
-                              <h4 class="info-text">Verify settings</h4>
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="col-sm-5 col-sm-offset-1">
-                                          <label>Network settings</label>
-                                      <h8>DHCP</h8><p><?php echo "$dhcp"; ?></p>
-                                      <h8>Static</h8><p><?php echo "$static"; ?></p>
-                                			<h8>IP address</h8><p><?php echo "$ip"; ?></p>
-                                			<h8>Subnet</h8><p><?php echo "$subnet"; ?></p>
-                                			<h8>Gateway</h8><p><?php echo "$gateway"; ?></p>
-                                      <h8>DNS Server</h8><p><?php echo "$dns"; ?></p>
-                                        </div>
-
-                                        <div class="col-sm-5 col-sm-offset-1">
-											                      <label>Let's Encrypt</label>
-                                            <h8>Local</h8><p><?php echo "$local"; ?></p>
-                                            <h8>Remote</h8><p><?php echo "$remote"; ?></p>
-                                            <h8>Domain name</h8><p><?php echo "$domainname"; ?></p>
-                                            <h8>E-mail address</h8><p><?php echo "$email"; ?></p>
-                                        </div>
-                                      </div>
-                                        <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="col-sm-5 col-sm-offset-1">
-                                            <label>Usenet</label>
-                                            <h8>Description</h8><p><?php echo "$usenetdescription"; ?></p>
-                                            <h8>Servername</h8><p><?php echo "$usenetservername"; ?></p>
-                                            <h8>Username</h8><p><?php echo "$usenetusername"; ?></p>
-                                            <h8>Password</h8><p><?php echo "$usenetpassword"; ?></p>
-                                            <h8>Port</h8><p><?php echo "$usenetport"; ?></p>
-                                            <h8>Threads</h8><p><?php echo "$usenetthreads"; ?></p>
-                                            <h8>SSL</h8><p><?php echo "$usenetssl"; ?></p>
-
-                                        <h8>WORK IN PROGRESS</h8>
-                                      </div>
-                                      <div class="col-sm-5 col-sm-offset-1">
-                                        <h6>Newznab</h6>
-                                        <h8>Provider</h8><p><?php echo "$newznabprovider"; ?></p>
-                                        <h8>URL</h8><p><?php echo "$newznaburl"; ?></p>
-                                        <h8>API</h8><p><?php echo "$newznabapi"; ?></p>
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="col-sm-5 col-sm-offset-1">
-											                      <h6>Global password</h6>
-                                			<h8>Password</h8><p><?php echo "$password"; ?></p>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="col-sm-5 col-sm-offset-1">
-                                        <h6>Miscellaneous</h6>
-                                        <h8>Headphones</h8><p><?php echo "$headphones"; ?></p>
-                                        <h8>AniDB</h8><p><?php echo "$anidb"; ?></p>
-                                        <h8>Plex</h8><p><?php echo "$plex"; ?></p>
-                                        <h8>Comic Vine</h8><p><?php echo "$imdb"; ?></p>
-                                    </div>
-                                  </div>
-                                  </div>
-                                </div>
-                                <div class="wizard-footer">
+                                  <div class="wizard-footer">
                                     <div class="pull-right">
                                         <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='finish' value='Confirm' />
 
@@ -211,8 +148,9 @@ fclose($file);
                                         <a href="javascript:history.back()"><input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Go back' /></a>
                                     </div>
                                     <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                      </body>
-                  </html>
+                                  </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
