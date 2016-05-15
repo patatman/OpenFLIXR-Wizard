@@ -134,15 +134,12 @@ fclose($file);
 
 <body>
     <div class="image-container set-full-height" style="background-image: url('img/bg.jpg')">
-
-    <div class="container">
+      <div class="container">
         <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-
-     <div class="tab-content">
-
-     	 <div class="wizard-container">
+          <div class="col-sm-8 col-sm-offset-2">
+              <div class="wizard-container">
                 <div class="card wizard-card ct-wizard-azzure" id="wizard">
+                  <div class="tab-content">
 
                             <div class="tab-pane" id="setup" name="messagebox">
                               <h4 class="info-text">Verify settings</h4>
@@ -203,7 +200,6 @@ fclose($file);
                                   </div>
                                   </div>
                                 </div>
-                            </div>
                                 <div class="wizard-footer">
                                     <div class="pull-right">
                                         <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='finish' value='Confirm' />
@@ -214,7 +210,7 @@ fclose($file);
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
-
+                            </div>
                         </div>
                       </body>
                   </html>
