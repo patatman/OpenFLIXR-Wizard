@@ -136,21 +136,9 @@ fclose($file);
 
 <body>
     <div class="image-container set-full-height" style="background-image: url('img/bg.jpg')">
-      <div class="container">
-        <div class="row">
 
-                                  <div class="wizard-footer">
-                                    <div class="pull-right">
-                                        <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='finish' value='Confirm' />
+      <!-- needs realtime output of console -->
 
-                                    </div>
-                                    <div class="pull-left">
-                                        <a href="javascript:history.back()"><input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Go back' /></a>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                  </div>
     </div>
-  </div>
-</div>
 </body>
 </html>
