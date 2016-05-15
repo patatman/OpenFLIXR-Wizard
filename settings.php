@@ -211,11 +211,16 @@ fclose($file);
                                 #9 DFO:    fclose($fh);
                                 ?>
                                 </div>
-                                <div class="pull-left">
-                                     <button type="button" class="btn btn-default">Go back</button>
-                                </div>
-                                <div class="clearfix"></div>
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                        <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='finish' value='Confirm' />
 
+                                    </div>
+                                    <div class="pull-left">
+                                        <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Go back' />
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
 
                         </div>
                         </html>
