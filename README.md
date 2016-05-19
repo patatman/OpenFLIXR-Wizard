@@ -1,3 +1,7 @@
 # OpenFLIXR-Wizard
 
-Still in very early development, please don't use.
+This is the OpenFLIXR Setup Wizard used in OpenFLIXR.
+
+http://www.openflixr.com
+
+Won't do much good on it's own :)

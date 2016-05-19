@@ -30,7 +30,7 @@ body {
     font-weight: 700;
 }
 
-
+.tooltip-wide .tooltip {min-width:200px;}
 
 /* Custom Button Styles */
 
