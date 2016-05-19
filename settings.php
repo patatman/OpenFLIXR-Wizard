@@ -9,8 +9,12 @@ foreach ($_POST as $param_name => $param_val) {
 $password = $_POST['password'];
 
 #network
+<<<<<<< HEAD
 $dhcp = $_POST['dhcp'];
 $static = $_POST['static'];
+=======
+$network = $_POST['network'];
+>>>>>>> patatman/master
 $ip = $_POST['ip'];
 $subnet = $_POST['subnet'];
 $gateway = $_POST['gateway'];
